@@ -1,0 +1,227 @@
+
+
+.finances-title-button {
+	display: inline-block;
+	vertical-align:text-bottom;
+}
+
+	.finances-menu-nav-button {
+		background-color: #ECEBEB;
+		padding: 0px 4px 0px 4px;
+		margin: 0px 5px 3px 0px;
+	}
+
+.finances-title-text {
+	display: inline-block;
+	font-size: 28pt;
+}
+
+.finances-menu-nav { 
+	padding: 5px 0px 8px 0px;
+}
+
+.finances-menu-bar-title { 
+	font-size: 20pt;
+}
+
+.finances-menu-bar-dropdown {
+	text-align:right; 
+	padding:7px 5px 0px 0px;
+}
+
+.finance-budget-amount {
+	text-align:right; 
+}
+
+@media only screen and (max-width: 600px) {
+	.finance-budget-amount {
+		text-align:left; 
+		padding-top:3px;
+		padding-bottom:3px;
+	}
+}
+
+.progress-bar {
+	width:100%;
+	height:10px;
+	background:red;
+	margin: 0px 0px 10px 0px;
+}
+
+.finances-budget-group {
+	padding-left:20px;
+}
+
+.finances-budget-group-nav {
+	padding-left:20px;
+	padding-top:20px;
+}
+
+.finances-budget-group-edit {
+	padding-top:42px;
+}
+
+.finance-note-text {
+	font-size: smaller;
+	padding-top: 5px;
+	padding-bottom: 15px;
+}
+
+
+.left-indent {
+	padding-left: 30px;
+}
+
+.bottom-pad {
+	padding-bottom:15px;
+}
+
+.top-pad {
+	padding-top:10px;
+}
+
+.align-buttons {
+	padding-top: 32px;
+}
+
+.finances-credit {
+	color: #32CD32;
+}
+
+.transactions-row {
+}
+
+.transactions-date {
+	padding-top:10px;
+	font-size:smaller;
+}
+
+.transactions-desc {
+	padding-top:10px;
+}
+
+.transactions-credit {
+	text-align:right;
+	padding-top:10px;
+}
+
+.transactions-debit {
+	text-align:right;
+	padding-top:10px;
+}
+
+.transactions-env {
+}
+
+.trans-title {
+	margin-bottom: 10px;
+}
+
+.finances-success {
+	color: green;
+}
+
+.finances-well {
+	display: none;
+	margin-top: 15px;
+}
+
+.finances-main {
+	margin-top: 15px;
+}
+
+.finances-text-pad {
+	margin-top: 7px;
+}
+
+p {
+	padding:0px 0px 0px 0px;
+	margin:12px 0px 18px 0px;
+	
+}
+
+.screen-elements-btn-inline {
+	margin-right:10px;
+}
+
+.Import label {
+	width: 100%;
+}
+
+.Import label .latest-date {
+	float:right;
+	font-weight: normal;
+	font-size:smaller;
+	padding-top:4px;
+}
+
+#DIV_Budget {
+	padding-bottom:50px;
+}
+
+.finance-header {
+	font-weight:bold;
+}
+
+.finance-desc {
+
+}
+
+.smaller-text {
+	font-size:smaller;
+}
+
+.alt-backgroup-color {
+	color:#32CD32;
+}
+
+.finance-options-pad {
+	margin-top: 5px;
+} 
+
+.finance-options-pad-extra {
+	margin-top: 25px;
+}
+
+.fincance-bar-wrapper {
+	border-radius: 6px;
+	height: 12px;
+	margin: 5px 0px 15px 0px;
+}
+.fincance-bar {
+	border-radius: 6px;
+	height: 12px;
+}
+
+.finance-previous-choice {
+	border:1px solid green;
+}
+
+#SavePresetGroup button {
+	margin-left:15px;
+	margin-top:10px;
+	width:100%;
+	background-color:darkgreen;
+
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
+}
+
+#SavePresetGroup button:hover {
+	background-color:green;
+	border-color:#FFA533;
+	color:#FFA533;
+	border-right-width:3px;
+	border-bottom-width:3px;
+}
+
+
+
+
+
+
+
+
+
+
+ 

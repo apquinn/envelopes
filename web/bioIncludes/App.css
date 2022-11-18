@@ -1,0 +1,553 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.header-black-background {
+  position: relative;
+  background-color: black;
+}
+.seaquinn {
+  opacity: 30%;
+}
+
+.header-black-background img {
+}
+
+.header-text-wrapper {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 20%;
+}
+.header-text-wrapper h3 {
+  color: white;
+}
+
+.header-text1 {
+  color: #78c2c0;
+  font-size: 18vw;
+  font-family: Snell Roundhand, cursive;
+}
+
+/************** SPECIAL *************/
+.special-global-wrapper {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.special-global-wrapper p {
+  margin: 5px;
+}
+
+.special-global-wrapper h1,
+h4 {
+  margin: 20px 0px 10px 0px;
+}
+
+.special-wrapper {
+  padding: 40px 0px 40px 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.special-section1 {
+  padding-right: 50px;
+  max-width: 450px;
+}
+
+.special-section2 {
+  color: #78c2c0;
+  font-size: large;
+  font-style: italic;
+  max-width: 300px;
+}
+
+.special-section2 img {
+  padding-top: 70px;
+}
+
+/************** LIGHT BLUE *************/
+.blue {
+  background: #5ec4c1;
+  padding: 50px;
+}
+
+.blueBackground {
+  padding-left: 50px;
+}
+
+.blue-wrapper {
+  background-color: #5ec4c1;
+  padding: 0px 20px 50px 20px;
+}
+
+.blue-wrapper h4 {
+  margin: 0px;
+}
+
+.blue-wrapper img {
+  width: 50px;
+  padding-bottom: 10px;
+}
+
+.bar {
+  border-right: 1px solid #6ab0ae;
+  margin-right: 20px;
+}
+
+.blue-wrapper a {
+  color: #f0f0f0;
+  font-size: smaller;
+}
+.blue-wrapper a:hover {
+  color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  .blueBackground {
+    padding-left: 0px;
+  }
+  .bar {
+    border-right: 0px;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .blueBackground {
+    display: flex;
+  }
+
+  .blue-wrapper {
+    width: 26%;
+  }
+}
+
+/************** PEOPLE *************/
+.blackBackground {
+  background: black;
+  padding-bottom: 40px;
+  padding-top: 20px;
+}
+.carousel-status {
+  display: none;
+}
+
+.control-dots li {
+  list-style: none;
+  margin-left: 0;
+  padding: 1px 20px 1px 20px;
+  height: 4px !important;
+  border-radius: 0% !important;
+  background-color: #5ec4c1 !important;
+}
+
+.dot.selected {
+  padding: 2px 20px 1px 20px;
+}
+
+.people-wrapper {
+  background-color: black;
+  text-align: left;
+}
+.people-header {
+  padding-top: 40px;
+  font-size: smaller;
+  color: white;
+}
+.people-header p {
+  margin-bottom: 8px;
+  border-bottom: 0px;
+}
+.people-title {
+  color: white;
+}
+
+.people-flex {
+  display: flex;
+  text-align: left;
+}
+.people-text {
+  color: #5ec4c1;
+  flex: 1;
+  margin-bottom: 50px;
+}
+
+.people-who-wrapper {
+  flex: 1;
+  margin-bottom: 50px;
+  position: relative;
+}
+.people-who-parent {
+}
+.people-who {
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  color: white;
+  font-size: smaller;
+  padding: 0px 0px 0px 50px;
+}
+.people-who p {
+  margin: 0px;
+}
+
+@media only screen and (max-width: 768px) {
+  .people-text {
+  }
+
+  .people-who-wrapper {
+    padding-top: 20px;
+  }
+
+  .people-who {
+    padding-left: 15px;
+  }
+}
+
+/************** PROJECTS *************/
+#projects-section8 {
+  padding-bottom: 100px;
+}
+.projects-wrapper {
+  position: relative;
+  background-color: #5ec4c1;
+}
+.projects-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: smaller;
+  padding-top: 50px;
+}
+
+#projects-section3,
+#projects-section4,
+#projects-section5,
+#projects-section6,
+#projects-section7,
+#projects-section8 {
+  display: none;
+  padding-top: 30px;
+}
+
+.projects-opener {
+  padding: 20px 0px 40px 0px;
+  text-align: center;
+}
+.projects-opener button {
+  background-color: transparent;
+  color: white;
+  font-size: smaller;
+}
+
+#projects-section1,
+#projects-section2 {
+  padding-top: 30px;
+}
+
+.project-box {
+  width: 100%;
+  background-color: white;
+  text-align: center;
+  padding: 25px 10px 0px 10px;
+  flex: 1;
+  position: relative;
+}
+
+.project-box-inside {
+  text-align: left;
+  padding: 10px 10px 30px 10px;
+  vertical-align: top;
+}
+
+.project-box-inside-title {
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+#projects img {
+  padding: 10px 15px 15px 15px;
+}
+
+.drewrow {
+  display: flex;
+}
+.drewcol {
+  display: flex;
+}
+
+.button-as-link {
+  background-color: white;
+  color: #5ec4c1;
+  border: 0px;
+  bottom: 0;
+  font-size: smaller;
+}
+.button-as-link:hover {
+  text-decoration: underline;
+}
+
+.link-div {
+  position: absolute;
+  text-align: right;
+  right: 0;
+  bottom: 0;
+  padding: 0px 15px 15px 0px;
+}
+
+.responsive-img-larger {
+  width: 85%;
+  height: auto;
+}
+.responsive-img-med {
+  width: 70%;
+  height: auto;
+}
+.responsive-img-smaller {
+  width: 50%;
+  height: auto;
+}
+.hidden {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  #projects-section1,
+  #projects-section2,
+  #projects-section3,
+  #projects-section4,
+  #projects-section5,
+  #projects-section6,
+  #projects-section7,
+  #projects-section8 {
+    padding-top: 0px;
+  }
+
+  .project-box {
+    padding: 20px 30px 0px 30px;
+    margin: 30px 0px 10px 0px;
+  }
+
+  .project-box-inside {
+    padding-bottom: 50px;
+  }
+
+  .link-div {
+    padding: 0px 25px 25px 0px;
+  }
+
+  .responsive-img {
+    width: 50%;
+    height: auto;
+  }
+  .responsive-img-larger {
+    width: 50%;
+    height: auto;
+  }
+  .responsive-img-med {
+    width: 35%;
+    height: auto;
+  }
+  .responsive-img-smaller {
+    width: 22%;
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .project-box {
+    padding: 20px 30px 0px 30px;
+    margin: 30px 0px 10px 0px;
+  }
+
+  #projects-section1,
+  #projects-section2,
+  #projects-section3,
+  #projects-section4,
+  #projects-section5,
+  #projects-section6,
+  #projects-section8 {
+    padding-top: 0px;
+  }
+
+  .responsive-img {
+    width: 50%;
+    height: auto;
+  }
+  .responsive-img-larger {
+    width: 50%;
+    height: auto;
+  }
+  .responsive-img-med {
+    width: 35%;
+    height: auto;
+  }
+  .responsive-img-smaller {
+    width: 22%;
+    height: auto;
+  }
+
+  .link-div {
+    padding: 0px 25px 25px 0px;
+  }
+}
+
+/************** JOBS *************/
+.jobs-main {
+  background-color: black;
+  padding-top: 50px;
+  padding-bottom: 60px;
+}
+
+.jobs-header {
+  padding-top: 20px;
+  font-size: smaller;
+  color: white;
+  text-align: left;
+}
+
+.jobs-wrapper {
+  padding-top: 20px;
+}
+
+.jobs-company {
+  font-size: larger;
+  color: #5ec4c1;
+}
+
+.jobs-title {
+  color: white;
+}
+
+.jobs-dates {
+  color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  .jobs-main {
+    padding-left: 15px;
+  }
+}
+
+/************** SKILLS *************/
+.skills {
+  padding-bottom: 30px;
+  text-align: center;
+}
+.icon-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: smaller;
+  padding-top: 50px;
+}
+
+.icon-wrapper {
+  display: inline-block;
+  width: 125px;
+  padding-top: 30px;
+}
+
+.icon {
+  height: 75px;
+}
+
+.Xicon-opacity1 {
+  opacity: 70%;
+}
+.Xicon-opacity2 {
+  opacity: 40%;
+}
+
+.icon-text {
+  padding-top: 8px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.icons-more-div {
+  color: black;
+  padding: 20px 0px 20px 0px;
+}
+
+#more-skills {
+  display: none;
+  padding-bottom: 50px;
+  margin-top: -20px;
+  text-align: center;
+}
+
+/************** Footer *************/
+.footer-black-background {
+  position: relative;
+  background-color: black;
+}
+.footer-black-background img {
+  opacity: 20%;
+}
+
+.footer-wrapper {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 15%;
+}
+.footer-text-seaquinn {
+  color: #5ec4c1;
+  font-size: 16vw;
+  font-family: Snell Roundhand, cursive;
+  text-align: center;
+  padding-right: 100px;
+}
+
+.footer-text-contact {
+  font-size: larger;
+  padding-bottom: 8px;
+}
+
+.footer-text-contact {
+  color: white;
+  padding-left: 75px;
+  text-align: left;
+}
+
+.footer-contact-types {
+  padding-left: 75px;
+  text-align: left;
+  font-size: smaller;
+  color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  .footer-text-seaquinn {
+    padding-right: 45px;
+  }
+  .footer-wrapper {
+    top: 0%;
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 991px) {
+  .footer-text-seaquinn {
+    padding-right: 75px;
+  }
+}
+
+.responsive-icon {
+  height: auto;
+}
+.responsive-img {
+  width: 100%;
+  height: auto;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script
+      src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+      integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.css"
+    />
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.js"></script>
+
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="js/2019FileUpload/css/jquery.fileupload-noscript.css"
+    /></noscript>
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="js/2019FileUpload/css/jquery.fileupload-ui-noscript.css"
+    /></noscript>
+    <link
+      rel="stylesheet"
+      href="js//2019FileUpload/css/jquery.fileupload.css"
+    />
+    <link
+      rel="stylesheet"
+      href="js/2019FileUpload/css/jquery.fileupload-ui.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="js/jquery-ui/jquery-smoothness-ui.css"
+    />
+
+    <script src="js/Finances.js<!--#include virtual='/cgi-bin/Finances_Random.php' -->"></script>
+    <link
+      rel="stylesheet"
+      href="css/finances.css<!--#include virtual='/cgi-bin/Finances_Random.php' -->"
+    />
+
+    <title>Finances</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 finances-title-bar">
+          <!--<div class="finances-title-button"><button type="button" class="btn finances-menu-nav-button" onclick=""><i class="fa fa-bars"></i></button></div>-->
+          <div class="finances-title-text">Finances</div>
+        </div>
+      </div>
+
+      <div class="row finances-menu-nav">
+        <div class="col-md-12">
+          <!--#include virtual="/cgi-bin/Finances_Nav.php" -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <!--#include virtual="/cgi-bin/Finances.php" -->
+    </div>
+
+    <script src="js/2019FileUpload/js/jquery.fileupload.js"></script>
+    <script src="js/2019FileUpload/js/jquery.fileupload-process.js"></script>
+    <script src="js/2019FileUpload/js/jquery.fileupload-image.js"></script>
+    <script src="js/2019FileUpload/js/jquery.fileupload-audio.js"></script>
+    <script src="js/2019FileUpload/js/jquery.fileupload-video.js"></script>
+    <script src="js/2019FileUpload/js/jquery.fileupload-validate.js"></script>
+    <script src="js/2019FileUpload/js/jquery.fileupload-ui.js"></script>
+
+    <script type="text/javascript" src="js/ckeditor-4.5.7/ckeditor.js"></script>
+  </body>
+</html>
