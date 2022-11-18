@@ -10,7 +10,7 @@ function NMU_AutoLoad($strClassName)
 	try
 	{
 		if(preg_match("/^[A-Za-z_]+$/", $strClassName) && ! strstr($strClassName, 'omega_')) 
-			require_once "/Users/aquinn/Development/Host/htdocs/cmsphp/Includes/Classes/NMU_$strClassName.class.php";
+			require_once dirname(dirname(__FILE__))."/Includes/Classes/NMU_$strClassName.class.php";
 	}
 	catch (Exception $EX)
 	{
