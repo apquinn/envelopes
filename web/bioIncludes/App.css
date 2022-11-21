@@ -405,6 +405,7 @@ h4 {
   text-align: left;
   font-size: smaller;
   color: white;
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 768px) {
