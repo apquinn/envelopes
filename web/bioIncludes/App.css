@@ -242,15 +242,15 @@ h4 {
 }
 
 .projects-section {
+  display: flex;
 }
 
 .project-box {
-  width: 100%;
-  margin: 20px;
+  width: 95%;
   background-color: #fff;
   position: relative;
   padding-bottom: 45px;
-  margin-right: 50px;
+  margin: 20px;
 }
 
 .project-box img {
@@ -270,7 +270,8 @@ h4 {
   margin: 10px 30px;
 }
 
-.hidden {
+.hidden,
+#hidden {
   display: none;
 }
 
@@ -289,13 +290,13 @@ h4 {
   cursor: pointer;
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (max-width: 1000px) {
   .projects-section {
-    display: flex;
+    flex-direction: column;
   }
   .project-box {
-    width: 95%;
-    margin-right: 50px;
+    width: 100%;
+    margin: 20px;
   }
 }
 
