@@ -1,0 +1,69 @@
+.container {
+	width: 20%;
+	margin: 10px auto;
+}
+
+.carousel {
+	border: 2px solid #ccc;
+	height: 400px;
+	position: relative;
+	overflow: hidden;
+}
+
+.slider {
+	height: 100%;
+	display: flex;
+	width: 400%;
+	transition: all 0.3s;
+}
+
+.slider section {
+	flex-basis: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.controls .arrow {
+	position: absolute;
+	top: 50%;
+	cursor: pointer;
+}
+
+.controls .arrow img {
+	opacity: 0.3;
+	width: 50px;
+	transform: translateY(-50%);
+}
+
+.arrow.left {
+	left: 10px;
+}
+
+.arrow.right {
+	right: 10px;
+}
+
+.controls ul {
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	transform: translate(-50%);
+	list-style: none;
+	display: flex;
+	padding: 0px;
+	margin: 0px;
+}
+
+.controls ul li {
+	width: 30px;
+	height: 5px;
+	border: 2px solid #5ec4c1;
+	margin: 10px;
+	background: #5ec4c1;
+	cursor: pointer;
+}
+
+.controls ul li.selected {
+	background: transparent;
+}
