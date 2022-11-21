@@ -352,10 +352,11 @@ h4 {
 .skills-section {
   display: flex;
   margin: 25px auto;
+  justify-content: center;
 }
 .icon-wrapper {
   text-align: center;
-  flex: 1;
+  margin: 0 25px;
 }
 
 @media only screen and (max-width: 768px) {
