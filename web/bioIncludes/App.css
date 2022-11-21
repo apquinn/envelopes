@@ -19,6 +19,12 @@ body {
   line-height: 1.5;
 }
 
+@media screen and (max-device-width: 1000px) {
+  body {
+    font-size: 24px;
+  }
+}
+
 .header-black-background {
   position: relative;
   background-color: black;
@@ -64,7 +70,6 @@ h4 {
 .special-wrapper {
   padding: 40px 0px 40px 50px;
   display: flex;
-  flex-wrap: wrap;
 }
 
 .special-section1 {
@@ -74,13 +79,27 @@ h4 {
 
 .special-section2 {
   color: #78c2c0;
-  font-size: large;
   font-style: italic;
   max-width: 350px;
 }
 
 .special-section2 img {
   padding-top: 70px;
+}
+
+@media screen and (max-device-width: 1000px) {
+  .special-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .special-section1 {
+    max-width: 100%;
+    margin-right: 20px;
+  }
+  .special-section2 {
+    max-width: 100%;
+    margin-right: 50px;
+  }
 }
 
 /************** LIGHT BLUE *************/
@@ -90,7 +109,7 @@ h4 {
 }
 
 .blueBackground {
-  padding-left: 50px;
+  margin-left: 50px;
 }
 
 .blue-wrapper {
@@ -130,13 +149,10 @@ h4 {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-device-width: 768px) {
   .blueBackground {
     display: flex;
-  }
-
-  .blue-wrapper {
-    width: 33%;
+    flex-direction: column;
   }
 }
 
@@ -202,8 +218,8 @@ h4 {
 }
 
 .controls ul li {
-  width: 30px;
-  height: 5px;
+  width: 75px;
+  height: 15px;
   border: 2px solid #5ec4c1;
   margin: 10px;
   cursor: pointer;
@@ -222,10 +238,7 @@ h4 {
   font-weight: bold;
 }
 
-@media only screen and (min-width: 1000px) {
-}
-
-@media only screen and (max-width: 999px) {
+@media only screen and (max-width: 1000px) {
   .people-text {
     font-size: larger;
   }
@@ -292,199 +305,8 @@ h4 {
     width: 95%;
     margin-right: 50px;
   }
-  .more-link {
-  }
-  .more-more-link {
-  }
 }
 
-/*
-#projects-section8 {
-  padding-bottom: 100px;
-}
-.projects-wrapper {
-  position: relative;
-  background-color: #5ec4c1;
-}
-.projects-title {
-  text-align: center;
-  font-weight: bold;
-  font-size: smaller;
-  padding-top: 50px;
-}
-
-#projects-section3,
-#projects-section4,
-#projects-section5,
-#projects-section6,
-#projects-section7,
-#projects-section8 {
-  display: none;
-  padding-top: 30px;
-}
-
-.projects-opener {
-  padding: 20px 0px 40px 0px;
-  text-align: center;
-}
-.projects-opener button {
-  background-color: transparent;
-  color: white;
-  font-size: smaller;
-}
-
-#projects-section1,
-#projects-section2 {
-  padding-top: 30px;
-}
-
-.project-box {
-  width: 100%;
-  background-color: white;
-  text-align: center;
-  padding: 25px 10px 0px 10px;
-  flex: 1;
-  position: relative;
-}
-
-.project-box-inside {
-  text-align: left;
-  padding: 10px 10px 30px 10px;
-  vertical-align: top;
-}
-
-.project-box-inside-title {
-  font-weight: bold;
-  padding-bottom: 5px;
-}
-
-#projects img {
-  padding: 10px 15px 15px 15px;
-}
-
-.drewrow {
-  display: flex;
-}
-.drewcol {
-  display: flex;
-}
-
-.button-as-link {
-  background-color: white;
-  color: #5ec4c1;
-  border: 0px;
-  bottom: 0;
-  font-size: smaller;
-}
-.button-as-link:hover {
-  text-decoration: underline;
-}
-
-.link-div {
-  position: absolute;
-  text-align: right;
-  right: 0;
-  bottom: 0;
-  padding: 0px 15px 15px 0px;
-}
-
-.responsive-img-larger {
-  width: 85%;
-  height: auto;
-}
-.responsive-img-med {
-  width: 70%;
-  height: auto;
-}
-.responsive-img-smaller {
-  width: 50%;
-  height: auto;
-}
-.hidden {
-  display: none;
-}
-
-@media only screen and (max-width: 768px) {
-  #projects-section1,
-  #projects-section2,
-  #projects-section3,
-  #projects-section4,
-  #projects-section5,
-  #projects-section6,
-  #projects-section7,
-  #projects-section8 {
-    padding-top: 0px;
-  }
-
-  .project-box {
-    padding: 20px 30px 0px 30px;
-    margin: 30px 0px 10px 0px;
-  }
-
-  .project-box-inside {
-    padding-bottom: 50px;
-  }
-
-  .link-div {
-    padding: 0px 25px 25px 0px;
-  }
-
-  .responsive-img {
-    width: 50%;
-    height: auto;
-  }
-  .responsive-img-larger {
-    width: 50%;
-    height: auto;
-  }
-  .responsive-img-med {
-    width: 35%;
-    height: auto;
-  }
-  .responsive-img-smaller {
-    width: 22%;
-    height: auto;
-  }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .project-box {
-    padding: 20px 30px 0px 30px;
-    margin: 30px 0px 10px 0px;
-  }
-
-  #projects-section1,
-  #projects-section2,
-  #projects-section3,
-  #projects-section4,
-  #projects-section5,
-  #projects-section6,
-  #projects-section8 {
-    padding-top: 0px;
-  }
-
-  .responsive-img {
-    width: 50%;
-    height: auto;
-  }
-  .responsive-img-larger {
-    width: 50%;
-    height: auto;
-  }
-  .responsive-img-med {
-    width: 35%;
-    height: auto;
-  }
-  .responsive-img-smaller {
-    width: 22%;
-    height: auto;
-  }
-
-  .link-div {
-    padding: 0px 25px 25px 0px;
-  }
-}
-*/
 /************** JOBS *************/
 .jobs-main {
   background-color: black;
