@@ -357,6 +357,7 @@ h4 {
 .icon-wrapper {
   text-align: center;
   margin: 0 25px;
+  flex: 0 0 100px;
 }
 
 @media only screen and (max-width: 768px) {
