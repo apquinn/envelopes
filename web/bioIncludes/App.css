@@ -40,9 +40,10 @@ body {
   position: absolute;
   width: 100%;
   text-align: center;
-  top: 20%;
+  top: 10%;
 }
-.header-text-wrapper h3 {
+.header-text-wrapper h3,
+h1 {
   color: white;
 }
 
@@ -110,6 +111,7 @@ h4 {
 
 .blueBackground {
   margin-left: 50px;
+  display: flex;
 }
 
 .blue-wrapper {
@@ -139,20 +141,14 @@ h4 {
   color: white;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-device-width: 768px) {
   .blueBackground {
     padding-left: 0px;
+    flex-direction: column;
   }
   .bar {
     border-right: 0px;
     padding-right: 20px;
-  }
-}
-
-@media screen and (min-device-width: 768px) {
-  .blueBackground {
-    display: flex;
-    flex-direction: column;
   }
 }
 
@@ -219,9 +215,9 @@ h4 {
 
 .controls ul li {
   width: 75px;
-  height: 15px;
+  height: 10px;
   border: 2px solid #5ec4c1;
-  margin: 10px;
+  margin: 20px;
   cursor: pointer;
 }
 
@@ -247,6 +243,12 @@ h4 {
 /************** PROJECTS *************/
 .special-global-wrapper h3 {
   text-align: center;
+}
+
+.projects-title {
+  color: #fff;
+  text-align: center;
+  font-size: smaller;
 }
 
 .projects-section {
@@ -314,83 +316,64 @@ h4 {
   padding-bottom: 60px;
 }
 
+.jobs-title {
+  text-align: center;
+  color: #fff;
+  font-size: smaller;
+}
+
 .jobs-header {
   padding-top: 20px;
   font-size: smaller;
   color: white;
   text-align: left;
+  margin-left: 50px;
+}
+
+.jobs-container {
+  color: #fff;
+  display: flex;
+  margin-left: 50px;
 }
 
 .jobs-wrapper {
   padding-top: 20px;
+  width: 33%;
 }
 
 .jobs-company {
-  font-size: larger;
   color: #5ec4c1;
 }
 
-.jobs-title {
-  color: white;
-}
-
-.jobs-dates {
-  color: white;
-}
-
-@media only screen and (max-width: 768px) {
-  .jobs-main {
-    padding-left: 15px;
+@media only screen and (max-device-width: 1000px) {
+  .jobs-container {
+    flex-direction: column;
+  }
+  .jobs-wrapper {
+    width: 100%;
   }
 }
 
 /************** SKILLS *************/
-.skills {
-  padding-bottom: 30px;
-  text-align: center;
-}
-.icon-title {
-  text-align: center;
-  font-weight: bold;
+.skills-title {
   font-size: smaller;
-  padding-top: 50px;
+  text-align: center;
+  margin: 50px auto;
 }
-
+.skills-section {
+  display: flex;
+  margin: 25px auto;
+}
 .icon-wrapper {
-  display: inline-block;
-  width: 125px;
-  padding-top: 30px;
-}
-
-.icon {
-  height: 75px;
-}
-
-.Xicon-opacity1 {
-  opacity: 70%;
-}
-.Xicon-opacity2 {
-  opacity: 40%;
-}
-
-.icon-text {
-  padding-top: 8px;
   text-align: center;
-  font-weight: bold;
+  flex: 3;
 }
 
-.icons-more-div {
-  color: black;
-  padding: 20px 0px 20px 0px;
+@media only screen and (max-width: 768px) {
+  .skills-section {
+    flex-direction: column;
+  }
 }
-
-#more-skills {
-  display: none;
-  padding-bottom: 50px;
-  margin-top: -20px;
-  text-align: center;
-}
-
 /************** Footer *************/
 .footer-black-background {
   position: relative;
