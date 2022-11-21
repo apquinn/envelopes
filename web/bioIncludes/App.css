@@ -408,6 +408,11 @@ h4 {
   text-decoration: none;
 }
 
+a[href^="tel"] {
+  text-decoration: inherit;
+  color: inherit;
+}
+
 @media only screen and (max-width: 768px) {
   .footer-text-seaquinn {
     padding-right: 45px;
