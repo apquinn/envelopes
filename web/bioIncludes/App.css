@@ -70,36 +70,32 @@ h4 {
 
 .special-wrapper {
   padding: 40px 0px 40px 50px;
-  display: flex;
 }
 
 .special-section1 {
-  padding-right: 50px;
-  max-width: 750px;
+  margin-right: 20px;
 }
 
 .special-section2 {
   color: #78c2c0;
   font-style: italic;
-  max-width: 350px;
+  margin-right: 50px;
 }
 
 .special-section2 img {
-  padding-top: 70px;
 }
 
-@media screen and (max-device-width: 1000px) {
+@media only screen and (min-width: 1000px) {
   .special-wrapper {
     display: flex;
-    flex-direction: column;
   }
   .special-section1 {
-    max-width: 100%;
-    margin-right: 20px;
+    max-width: 750px;
+    padding-right: 50px;
   }
   .special-section2 {
-    max-width: 100%;
-    margin-right: 50px;
+    max-width: 350px;
+    padding-top: 70px;
   }
 }
 
@@ -110,8 +106,7 @@ h4 {
 }
 
 .blueBackground {
-  margin-left: 50px;
-  display: flex;
+  margin-left: 0px;
 }
 
 .blue-wrapper {
@@ -128,11 +123,6 @@ h4 {
   padding-bottom: 10px;
 }
 
-.bar {
-  border-right: 1px solid #6ab0ae;
-  margin-right: 20px;
-}
-
 .blue-wrapper a {
   color: #f0f0f0;
   font-size: smaller;
@@ -141,14 +131,14 @@ h4 {
   color: white;
 }
 
-@media only screen and (max-device-width: 768px) {
+@media only screen and (min-width: 1000px) {
   .blueBackground {
-    padding-left: 0px;
-    flex-direction: column;
+    margin-left: 50px;
+    display: flex;
   }
   .bar {
-    border-right: 0px;
-    padding-right: 20px;
+    border-right: 1px solid #6ab0ae;
+    margin-right: 20px;
   }
 }
 
@@ -252,15 +242,15 @@ h4 {
 }
 
 .projects-section {
-  display: flex;
 }
 
 .project-box {
-  width: 33%;
+  width: 100%;
   margin: 20px;
   background-color: #fff;
   position: relative;
   padding-bottom: 45px;
+  margin-right: 50px;
 }
 
 .project-box img {
@@ -299,9 +289,9 @@ h4 {
   cursor: pointer;
 }
 
-@media only screen and (max-device-width: 768px) {
+@media only screen and (min-width: 1000px) {
   .projects-section {
-    flex-direction: column;
+    display: flex;
   }
   .project-box {
     width: 95%;
@@ -332,25 +322,24 @@ h4 {
 
 .jobs-container {
   color: #fff;
-  display: flex;
-  margin-left: 50px;
 }
 
 .jobs-wrapper {
-  padding-top: 20px;
-  width: 33%;
+  padding-top: 30px;
+  width: 100%;
+  margin-left: 50px;
 }
 
 .jobs-company {
   color: #5ec4c1;
 }
 
-@media only screen and (max-device-width: 1000px) {
+@media only screen and (min-width: 1000px) {
   .jobs-container {
-    flex-direction: column;
+    display: flex;
   }
   .jobs-wrapper {
-    width: 100%;
+    width: 33%;
   }
 }
 
@@ -366,7 +355,7 @@ h4 {
 }
 .icon-wrapper {
   text-align: center;
-  flex: 3;
+  flex: 1;
 }
 
 @media only screen and (max-width: 768px) {
