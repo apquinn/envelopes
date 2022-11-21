@@ -1,14 +1,21 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "Montserrat", sans-serif;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin: 0;
   padding: 0;
-  font-size: 15px;
+  font-size: 18px;
   line-height: 1.5;
 }
 
@@ -41,7 +48,7 @@ body {
 
 /************** SPECIAL *************/
 .special-global-wrapper {
-  max-width: 850px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -62,14 +69,14 @@ h4 {
 
 .special-section1 {
   padding-right: 50px;
-  max-width: 450px;
+  max-width: 750px;
 }
 
 .special-section2 {
   color: #78c2c0;
   font-size: large;
   font-style: italic;
-  max-width: 300px;
+  max-width: 350px;
 }
 
 .special-section2 img {
@@ -129,94 +136,169 @@ h4 {
   }
 
   .blue-wrapper {
-    width: 26%;
+    width: 33%;
   }
 }
 
 /************** PEOPLE *************/
 .blackBackground {
-  background: black;
-  padding-bottom: 40px;
-  padding-top: 20px;
+  background-color: #000000;
+  color: #fff;
 }
-.carousel-status {
-  display: none;
-}
-
-.control-dots li {
-  list-style: none;
-  margin-left: 0;
-  padding: 1px 20px 1px 20px;
-  height: 4px !important;
-  border-radius: 0% !important;
-  background-color: #5ec4c1 !important;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 0;
 }
 
-.dot.selected {
-  padding: 2px 20px 1px 20px;
-}
-
-.people-wrapper {
-  background-color: black;
-  text-align: left;
-}
-.people-header {
-  padding-top: 40px;
-  font-size: smaller;
-  color: white;
-}
-.people-header p {
-  margin-bottom: 8px;
-  border-bottom: 0px;
-}
-.people-title {
-  color: white;
-}
-
-.people-flex {
-  display: flex;
-  text-align: left;
-}
-.people-text {
-  color: #5ec4c1;
-  flex: 1;
-  margin-bottom: 50px;
-}
-
-.people-who-wrapper {
-  flex: 1;
-  margin-bottom: 50px;
+.carousel {
   position: relative;
+  overflow: hidden;
 }
-.people-who-parent {
+
+.slider {
+  height: 100%;
+  display: flex;
+  width: 200%;
+  transition: all 0.3s;
 }
-.people-who {
-  right: 0;
-  bottom: 0;
-  left: 0;
+
+.slider section {
+  flex-basis: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 50px;
+}
+
+.controls .arrow {
   position: absolute;
-  color: white;
-  font-size: smaller;
-  padding: 0px 0px 0px 50px;
+  top: 50%;
+  cursor: pointer;
 }
-.people-who p {
+
+.controls .arrow img {
+  opacity: 0.3;
+  width: 50px;
+  transform: translateY(-50%);
+}
+
+.arrow.left {
+  left: 10px;
+}
+
+.arrow.right {
+  right: 10px;
+}
+
+.controls ul {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%);
+  list-style: none;
+  display: flex;
+  padding: 0px;
   margin: 0px;
 }
 
-@media only screen and (max-width: 768px) {
+.controls ul li {
+  width: 30px;
+  height: 5px;
+  border: 2px solid #5ec4c1;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.controls ul li.selected {
+  background: #5ec4c1;
+}
+
+.people-text {
+  color: #5ec4c1;
+}
+
+.people-title {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 1000px) {
+}
+
+@media only screen and (max-width: 999px) {
   .people-text {
-  }
-
-  .people-who-wrapper {
-    padding-top: 20px;
-  }
-
-  .people-who {
-    padding-left: 15px;
+    font-size: larger;
   }
 }
 
 /************** PROJECTS *************/
+.special-global-wrapper h3 {
+  text-align: center;
+}
+
+.projects-section {
+  display: flex;
+}
+
+.project-box {
+  width: 33%;
+  margin: 20px;
+  background-color: #fff;
+  position: relative;
+  padding-bottom: 45px;
+}
+
+.project-box img {
+  margin: 20px 20px 20px 20px;
+  width: 80%;
+}
+.img-alignment {
+  text-align: center;
+}
+
+.project-box h4 {
+  font-weight: bold;
+  margin: 5px 30px;
+}
+
+.project-box p {
+  margin: 10px 30px;
+}
+
+.hidden {
+  display: none;
+}
+
+.more-link {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  text-decoration: none;
+  color: #5ec4c1;
+  cursor: pointer;
+}
+
+.more-more-div {
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+@media only screen and (max-device-width: 768px) {
+  .projects-section {
+    flex-direction: column;
+  }
+  .project-box {
+    width: 95%;
+    margin-right: 50px;
+  }
+  .more-link {
+  }
+  .more-more-link {
+  }
+}
+
+/*
 #projects-section8 {
   padding-bottom: 100px;
 }
@@ -402,7 +484,7 @@ h4 {
     padding: 0px 25px 25px 0px;
   }
 }
-
+*/
 /************** JOBS *************/
 .jobs-main {
   background-color: black;

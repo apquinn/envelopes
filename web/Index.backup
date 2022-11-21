@@ -1,88 +1,7 @@
 
 
 
-			<div class="blackBackground">
-				<Carousel class="people" showThumbs={false} >
-					<div>
-						<Container>
-							<Row>
-								<Col md={9} class="people-wrapper">
-									<div class="people-header">
-										<p>What people are saying</p>
-									</div>
-								</Col>
-							</Row>
-
-							<Row>
-								<Col md={9} class="people-wrapper">
-									<div class="people-title">
-										<h2>Regarding 2019-20 Drupal 7 to 8 migration</h2>
-									</div>
-								</Col>
-							</Row>
-
-							<Row class="people-flex">
-								<Col md={8} class="people-wrapper">
-									<div class="people-text">
-										<p>"Every few years we attempt the impossible.  We take our fully functioning, yet somewhat dated website, and we migrate the content into a new version of the site. This year we didn't just start migrating content, we also started the process that will rewrite the underlying framework that powers the NMU website.  As with past conversions, Drew has played a critical role in this process by not only figuring out how we can accomplish this migration but also automating large pieces of it making the migration of over 40 thousand nodes actually possible.”</p>
-									</div>
-								</Col>
-								<Col md={4} class="people-who-wrapper">
-									<div class="people-who-parent">
-										<div class="people-who">
-											<p>
-												<strong>Eric Johnson</strong><br/>
-												Web Systems Director<br/>
-												Northern Michigan University
-											</p>
-										</div>
-									</div>
-								</Col>
-							</Row>
-						</Container>
-					</div>
-
-
-					<div>
-						<Container>
-							<Row>
-								<Col md={9} class="people-wrapper">
-									<div class="people-header">
-										<p>What people are saying</p>
-									</div>
-								</Col>
-							</Row>
-
-							<Row>
-								<Col md={9} class="people-wrapper">
-									<div class="people-title">
-										<h3>Regarding Transition During 2020 Epidemic</h3>
-									</div>
-								</Col>
-							</Row>
-
-							<Row class="people-flex">
-								<Col md={8} class="people-wrapper">
-									<div class="people-text">
-										<p>"Working remotely and staying remote for a good part of the previous year was challenging for everyone on the team. Our normal office environment and processes were upended by an unprecedented pandemic.  Regardless of this, Drew has embraced working remotely and even thrived in this new environment.  Through his use of technology and willingness to initiate communication with the team, Drew has become one of the primary reasons why we can continue working at a high level regardless of where our individual offices are located. Beyond being able to take the lead on a highly technical project, which Drew has certainly done, being able to effectively communicate with everyone on the team and leverage their strengths to advance a project continues to be one of Drew's invaluable assets.”</p>
-									</div>
-								</Col>
-								<Col md={4} class="people-who-wrapper">
-									<div class="people-who-parent">
-										<div class="people-who">
-											<p>
-												<strong>Eric Johnson</strong><br/>
-												Web Systems Director<br/>
-												Northern Michigan University
-											</p>
-										</div>
-									</div>
-								</Col>
-							</Row>
-						</Container>
-					</div>
-				</Carousel>
-			</div>
+			
 
 
 			<div id="projects" class="blueBackground">
@@ -113,7 +32,7 @@
 										<div class="project-box-inside-title">Custom Global News</div>
 										<p>How can extremely high-end hotels separate themselves from the competition?</p>
 										<div class="hidden">
-											<p>These hotels and resorts thrive on special treatment for their guests. I worked with an entrepreneur to deliver a system that took a daily guest data set containing guest home location, language and past resort activities. Each night the system calculated and distributed to writers worldwide the assignments needed to create a two-sided 12”x18” high quality newsletter containing local news, news highlights from the guests home, activities matched to their prior ones and local weather all in their preferred language. After the writers entered their stories, the system compiled them into pdfs that were sent to the hotel, printed and stuffed under the guests' doors before 6 a.m. </p>
+											<p>These hotels and resorts thrive on special treatment for their guests. I worked with an entrepreneur to deliver a system that took a daily guest data set containing guest home location, language and past resort activities. Each night the system calculated and distributed to writers worldwide the assignments needed to create a two-sided 12"x18" high quality newsletter containing local news, news highlights from the guests home, activities matched to their prior ones and local weather all in their preferred language. After the writers entered their stories, the system compiled them into pdfs that were sent to the hotel, printed and stuffed under the guests' doors before 6 a.m. </p>
 										</div>
 									</div>
 									<div class="link-div" ><button class="button-as-link" onClick={this.openMore} >Learn More</button></div>
@@ -234,7 +153,7 @@
 										<div class="project-box-inside-title">Drupal 7 multisite installation</div>
 										<p>How do you take over 160 sites with tens of thousands of HTML pages and move them into a multisite configuration of Drupal in 9 months? </p>
 										<div class="hidden">
-											<p>With a giant script of course! This was one of those unusual occasions when a developer saying "I need a fast computer and to be left alone” actually made sense and the kind of logic and coding was right up my alley. In the end the original content was pealed apart and stuffed in the appropriate tables and configuration files to create all the sites for a succesful, ontime completion.</p>
+											<p>With a giant script of course! This was one of those unusual occasions when a developer saying "I need a fast computer and to be left alone" actually made sense and the kind of logic and coding was right up my alley. In the end the original content was pealed apart and stuffed in the appropriate tables and configuration files to create all the sites for a succesful, ontime completion.</p>
 										</div>
 									</div>
 									<div class="link-div" ><button class="button-as-link" onClick={this.openMore} >Learn More</button></div>
@@ -305,7 +224,7 @@
 										<div class="project-box-inside-title">Brinson Partners Presentation Management System</div>
 										<p>In the world of Brinson Partners, making a presentation to a client that contains misinformation is a potential financial disaster.</p>
 										<div class="hidden">
-											<p>In order to mitigate this, all slides were created in the central office and no other content is allowed. In the past, the partner had to fly to the Chicago office to put their presentation together, which was then printed, bound and shipped to the location the presentation would take place. Don't feel too bad for them, these partners all had their own jets! I was hired to build an application that allowed partners to view real-time images of the slides and organize them into the "story” the partner wanted to tell. When they were done, a presentation was created for them to download and print remotely, but not edit. In addition, stories could be saved and when opened later, for another client perhaps, the system would inform the partner if any of the original slides had been updated.</p>
+											<p>In order to mitigate this, all slides were created in the central office and no other content is allowed. In the past, the partner had to fly to the Chicago office to put their presentation together, which was then printed, bound and shipped to the location the presentation would take place. Don't feel too bad for them, these partners all had their own jets! I was hired to build an application that allowed partners to view real-time images of the slides and organize them into the "story" the partner wanted to tell. When they were done, a presentation was created for them to download and print remotely, but not edit. In addition, stories could be saved and when opened later, for another client perhaps, the system would inform the partner if any of the original slides had been updated.</p>
 										</div>
 									</div>
 									<div class="link-div" ><button class="button-as-link" onClick={this.openMore} >Learn More</button></div>
@@ -334,7 +253,7 @@
 									<img alt="Bell Atlantic" class="responsive-img-med" src="./bioIncludes/pics/projects/bellatlantic.jpeg" />
 									<div class="project-box-inside">
 										<div class="project-box-inside-title">Bell Atlantic</div>
-										<p>Have you ever called the east coast? Did it go through? Good, then the system I and 250 fellow "Androids” worked on to monitor the line status of all Bell Atlantic lines is working well!</p>
+										<p>Have you ever called the east coast? Did it go through? Good, then the system I and 250 fellow "Androids" worked on to monitor the line status of all Bell Atlantic lines is working well!</p>
 									</div>
 								</div>
 							</Col>
