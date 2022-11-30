@@ -550,6 +550,12 @@
 			<div class="special-global-wrapper">
 				<div class="jobs-title">Places I've Worked</div>
 				<container class="jobs-container">
+					<div class="jobs-wrapper">
+						<span class="jobs-company">Sea Quinn</span><br/>
+						<span class="jobs-title">Owner</span><br/>
+						<span class="jobs-dates">May 2021 - Current</span>
+					</div>
+
 				</container>
 
 			</div>
