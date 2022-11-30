@@ -47,10 +47,6 @@ h1 {
   color: white;
 }
 
-.special-wrapper h1 {
-  color: black;
-}
-
 .header-text1 {
   color: #78c2c0;
   font-size: 18vw;
@@ -63,6 +59,11 @@ h1 {
   margin: 0 auto;
 }
 
+.special-global-wrapper h1 {
+  color: black;
+  padding: 40px 0px 0px 50px;
+}
+
 .special-global-wrapper p {
   margin: 5px;
 }
@@ -73,7 +74,7 @@ h4 {
 }
 
 .special-wrapper {
-  padding: 40px 0px 40px 50px;
+  padding: 0px 0px 40px 50px;
 }
 
 .special-section1 {
@@ -106,7 +107,7 @@ h4 {
 
   .special-section2 {
     max-width: 350px;
-    margin-right: 80px 50px 0 0;
+    margin: 0 50px 0 0;
   }
 }
 

@@ -17,9 +17,9 @@
     </div>
 
     <div class="special-global-wrapper">
+      <h1>What makes me so special?</h1>
       <div class="special-wrapper">
         <div class="special-section1">
-          <h1>What makes me so special?</h1>
           <p>
             I'm a graduate of Michigan State University with simultaneous
             degrees in computer science, industrial psychology and minor in art
