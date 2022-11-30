@@ -312,26 +312,11 @@ h4 {
 }
 
 /************** JOBS *************/
+/*
 .jobs-main {
   background-color: black;
   padding-top: 50px;
   padding-bottom: 60px;
-}
-
-.jobs-title {
-  text-align: center;
-  color: #fff;
-  font-size: smaller;
-}
-
-.jobs-company {
-  color: #5ec4c1;
-}
-
-.jobs-dates {
-  color: #fff;
-  font-size: smaller;
-  font-style: italic;
 }
 
 .jobs-container {
@@ -344,6 +329,22 @@ h4 {
   margin-left: 50px;
 }
 
+.jobs-company {
+  color: #5ec4c1;
+}
+
+.jobs-title {
+  text-align: center;
+  color: #fff;
+  font-size: smaller;
+}
+
+.jobs-dates {
+  color: #fff;
+  font-size: smaller;
+  font-style: italic;
+}
+
 @media only screen and (min-width: 1000px) {
   .jobs-container {
     display: flex;
@@ -352,7 +353,7 @@ h4 {
     width: 33%;
   }
 }
-
+*/
 /************** SKILLS *************/
 .skills-title {
   font-size: smaller;
