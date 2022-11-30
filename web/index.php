@@ -550,23 +550,6 @@
 			<div class="special-global-wrapper">
 				<div class="jobs-title">Places I've Worked</div>
 				<container class="jobs-container">
-					<div class="jobs-wrapper">
-						<span class="jobs-company">Sea Quinn</span><br/>
-						<span class="jobs-title">Owner</span><br/>
-						<span class="jobs-dates">May 2021 - Current</span>
-					</div>
-
-					<div class="jobs-wrapper">
-						<span class="jobs-company">Northern Michigan University</span><br/>
-						<span class="jobs-title">Web Systems Manager</span><br/>
-						<span class="jobs-dates">Dec 2006 - Dec 2020</span>
-					</div>
-
-					<div class="jobs-wrapper">
-						<span class="jobs-company">Kemper Auto & Home Insurance</span><br/>
-						<span class="jobs-title">Senior Business Analyst</span><br/>
-						<span class="jobs-dates">Aug 2004 - Dec 2006</span>
-					</div>
 				</container>
 
 			</div>
