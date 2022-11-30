@@ -70,7 +70,7 @@
               I'm a software architect. From big to small, large teams to solo
               project.
             </p>
-            <p><a href="#projects">Check out my experience</a></p>
+            <p><a href="#projects">See my experience</a></p>
           </div>
           <div class="blue-wrapper bar">
             <div>
@@ -81,7 +81,7 @@
               Full-lifecycle web development projects and all the technologies
               required to deliver them.
             </p>
-            <p><a href="#skills">See my skills</a></p>
+            <p><a href="#skills">Check out my skills</a></p>
           </div>
           <div class="blue-wrapper">
             <div>
