@@ -546,6 +546,59 @@
 	    </div>
     </div>
 
+		<div class="jobs-main">
+			<div class="special-global-wrapper">
+				<div class="jobs-title">Places I've Worked</div>
+				<container class="jobs-container">
+					<div class="jobs-wrapper">
+						<span class="jobs-company">Sea Quinn</span><br/>
+						<span class="jobs-title">Owner</span><br/>
+						<span class="jobs-dates">May 2021 - Current</span>
+					</div>
+
+					<div class="jobs-wrapper">
+						<span class="jobs-company">Northern Michigan University</span><br/>
+						<span class="jobs-title">Web Systems Manager</span><br/>
+						<span class="jobs-dates">Dec 2006 - Dec 2020</span>
+					</div>
+
+					<div class="jobs-wrapper">
+						<span class="jobs-company">Kemper Auto & Home Insurance</span><br/>
+						<span class="jobs-title">Senior Business Analyst</span><br/>
+						<span class="jobs-dates">Aug 2004 - Dec 2006</span>
+					</div>
+				</container>
+
+				<container class="jobs-container">
+					<div class="jobs-wrapper">
+						<span class="jobs-company">Epotec, Inc</span><br/>
+						<span class="jobs-title">Vice President, Technology</span><br/>
+						<span class="jobs-dates">Dec 1999 - Apr 2004</span>
+					</div>
+
+					<div class="jobs-wrapper">
+						<span class="jobs-company">Metamor Technologies, Ltd</span><br/>
+						<span class="jobs-title">Software Architect</span><br/>
+						<span class="jobs-dates">Jan 1997 - Dec 1999</span>
+					</div>
+
+					<div class="jobs-wrapper">
+						<span class="jobs-company">Giant Step</span><br/>
+						<span class="jobs-title">Senior Developer</span><br/>
+						<span class="jobs-dates">Jan 1996 - Jan 1997</span>
+					</div>
+				</container>
+
+				<container class="jobs-container">
+					<div class="jobs-wrapper">
+						<span class="jobs-company">Accenture</span><br/>
+						<span class="jobs-title">Senior Consultant</span><br/>
+						<span class="jobs-dates">Jan 1993 - Jan 1996</span>
+					</div>
+				</container>
+			</div>
+		</div>
+
 	</body>
 </html>
 
