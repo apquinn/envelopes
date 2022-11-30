@@ -599,6 +599,211 @@
 			</div>
 		</div>
 
+		<div class="special-global-wrapper" id="skills">
+			<div class="skills-title">Things I know about</div>
+				<section class="skills-section">
+
+					<div class="icon-wrapper">
+						<div>
+							<img alt="Apache" src="./bioIncludes/skills/10.jpeg" />
+						</div>
+						<div>Apache</div>
+					</div>
+							
+					<div class="icon-wrapper">
+						<div>
+							<img alt="PHP" src="./bioIncludes/skills/11.jpeg" />
+						</div>
+						<span>PHP</span>
+					</div>
+					
+					<div class="icon-wrapper">
+						<div>
+							<img alt="MySQL" src="./bioIncludes/skills/12.jpeg" />
+						</div>
+						<span>MySQL</span>
+					</div>
+					
+					<div class="icon-wrapper">
+						<div>
+							<img alt="Drupal" src="./bioIncludes/skills/40.jpeg" />
+						</div>
+						<span>Drupal</span>
+					</div>
+
+					<div class="icon-wrapper">
+						<div>
+							<img alt="Object Oriented" src="./bioIncludes/skills/50.jpeg" />
+						</div>
+						<div class="icon-text">Object Oriented</div>
+					</div>
+
+					<div class="icon-wrapper">
+						<div>
+							<img alt="Shell Scripting" src="./bioIncludes/skills/53.jpeg" />
+						</div>
+						<div class="icon-text">Shell Scripting</div>
+					</div>
+
+				</section>
+
+				<section class="skills-section">
+					<div class="icon-wrapper">
+						<div>
+							<img alt="jQuery" src="./bioIncludes/skills/13.jpeg" />
+						</div>
+						<span>jQuery</span>
+					</div>
+					
+					<div class="icon-wrapper">
+						<div>
+							<img alt="Ajax" src="./bioIncludes/skills/14.jpeg" />
+						</div>
+						<span>Ajax</span>
+					</div>
+
+					<div class="icon-wrapper">
+						<div>
+							<img alt="Javascript" src="./bioIncludes/skills/15.jpeg" />
+						</div>
+						<span>Javascript</span>
+					</div>
+				</section>
+
+				<section class="skills-section">
+					<div class="icon-wrapper">
+						<div>
+							<img alt="SaSS" src="./bioIncludes/skills/18.jpeg" />
+						</div>
+						<div class="icon-text">SASS</div>
+					</div>
+					
+					<div class="icon-wrapper">
+						<div>
+							<img alt="Bootstrap" src="./bioIncludes/skills/21.jpeg" />
+						</div>
+						<div class="icon-text">Bootstrap</div>
+					</div>
+					
+					<div class="icon-wrapper">
+						<div>
+							<img alt="Twig" src="./bioIncludes/skills/20.jpeg" />
+						</div>
+						<div class="icon-text">Twig</div>
+					</div>
+
+					<div class="icon-wrapper">
+						<div>
+							<img alt="HTML5" src="./bioIncludes/skills/16.jpeg" />
+						</div>
+						<div class="icon-text">HTML5</div>
+					</div>
+					
+					<div class="icon-wrapper">
+						<div>
+							<img alt="CSS" src="./bioIncludes/skills/17.jpeg" />
+						</div>
+						<div class="icon-text">CSS</div>
+					</div>
+				</section>
+
+				<section class="skills-section">
+					<div class="icon-wrapper">
+						<div>
+							<img alt="MacOS" src="./bioIncludes/skills/52.jpeg" />
+						</div>
+						<div class="icon-text">MacOS</div>
+					</div>
+
+					<div class="icon-wrapper">
+						<div>
+							<img alt="Linux" src="./bioIncludes/skills/51.jpeg" />
+						</div>
+						<div class="icon-text">Linux</div>
+					</div>
+						
+					<div class="icon-wrapper">
+						<div>
+							<img alt="Fusion" src="./bioIncludes/skills/54.jpeg" />
+						</div>
+						<div class="icon-text">Fusion</div>
+					</div>
+					
+					<div class="icon-wrapper">
+						<div>
+							<img alt="Vagrant" src="./bioIncludes/skills/55.jpeg" />
+						</div>
+						<div class="icon-text">Vagrant</div>
+					</div>
+
+					<div class="icon-wrapper">
+						<div>
+							<img alt="Lets Encrypt" src="./bioIncludes/skills/30.jpeg" />
+						</div>
+						<div class="icon-text">Lets Encrypt</div>
+					</div>
+					
+				</section>
+
+				<section class="skills-section">
+					<div class="icon-wrapper">
+						<div>
+							<img alt="Github" src="./bioIncludes/skills/32.jpeg" />
+						</div>
+						<div class="icon-text">GitHub</div>
+					</div>
+				
+					<div class="icon-wrapper">
+						<div>
+							<img alt="Stackla" src="./bioIncludes/skills/58.jpeg" />
+						</div>
+						<div class="icon-text">Stackla</div>
+					</div>
+
+					<div class="icon-wrapper">
+						<div>
+							<img alt="Localist" src="./bioIncludes/skills/59.jpeg" />
+						</div>
+						<div class="icon-text">Localist</div>
+					</div>
+
+					<div class="icon-wrapper">
+						<div>
+							<img alt="Composer" src="./bioIncludes/skills/31.jpeg" />
+						</div>
+						<div class="icon-text">Composer</div>
+					</div>
+					
+					<div class="icon-wrapper">
+						<div>
+							<img alt="Ghost Inspector" src="./bioIncludes/skills/36.jpeg" />
+						</div>
+						<div class="icon-text">Ghost Inspector</div>
+					</div>
+				</section>
+			</div>
+		</div>
+
+
+			<div class="footer-black-background" id="help">
+				<img alt="drew" src="./bioIncludes/pics/footer-background.jpg" class="responsive-img" />
+
+				<div class="footer-wrapper">
+					<div class="footer-text-seaquinn">Sea Quinn</div>
+
+					<div id="contact" class="footer-text-contact">Get in touch</div>
+					<div class="footer-contact-types">
+						Drew Quinn<br/>
+						335 Pelissier Lake Road Marquette, MI 49855<br/>
+						906-235-6303<br/>
+						apquinn@gmail.com<br/>
+						sea-quinn.com
+					</div>
+					<div id="footer-contact-types-choice"></div>
+				</div>
+				<br><br><br><br>
+				<br><br><br><br>
+			</div>
 	</body>
 </html>
 
