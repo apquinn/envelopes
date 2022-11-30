@@ -539,7 +539,7 @@
 						<h4>Jenn-air</h4>
 						<p>I should have asked for free appliances for life. Oh well. Burt Reynolds built this one. OK, that's a lie, Drew built it.</p>
 					</article>
-				</Container>
+				</section>
 			</div>
 			<div class="more-more-div">
 				<a class="more-more-link">want to see more?</a>
