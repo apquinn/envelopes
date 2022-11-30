@@ -114,7 +114,7 @@ h4 {
 /************** LIGHT BLUE *************/
 .blue {
   background: #5ec4c1;
-  padding: 50px;
+  padding: 50px 50px 80px 50px;
 }
 
 .blueBackground {
@@ -136,13 +136,17 @@ h4 {
 
 .blue-wrapper a {
   color: #f0f0f0;
-  font-size: smaller;
+  font-size: small;
 }
 .blue-wrapper a:hover {
   color: white;
 }
 
 @media only screen and (min-width: 1000px) {
+  .blue {
+    padding: 50px;
+  }
+
   .blue-wrapper img {
     width: 50px;
     padding: 0px 0px 10px 0px;
