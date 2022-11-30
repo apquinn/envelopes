@@ -3,7 +3,6 @@ require_once dirname(__FILE__)."/Includes/2015_FunctionsCommon.php";
 date_default_timezone_set('America/New_York');
 define("Const_SelfName", "Finances.php");
 
-
 function Finances_Main()
 {
 	try

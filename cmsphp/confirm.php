@@ -7,7 +7,7 @@ if(!isset($_SESSION[Const_sLoginName]) || $_SESSION[Const_sLoginName] != "quinn"
 {
 	if(isset($_REQUEST[Const_Subaction]) && $_REQUEST[Const_Subaction] == "process")
 	{
-		if($_REQUEST["INPUT"] == "Wondermutt")
+		if($_REQUEST["INPUT"] == "Wondermut")
 		{
 			$_SESSION[Const_sLoginName] = 'quinn';
 			header("Location: /Finances.shtml");

@@ -47,6 +47,10 @@ h1 {
   color: white;
 }
 
+.special-wrapper h1 {
+  color: black;
+}
+
 .header-text1 {
   color: #78c2c0;
   font-size: 18vw;
@@ -76,26 +80,33 @@ h4 {
   margin-right: 20px;
 }
 
+.special-section1 h4 {
+  margin-top: 50px;
+}
+
 .special-section2 {
   color: #78c2c0;
   font-style: italic;
-  margin-right: 50px;
-}
-
-.special-section2 img {
+  margin: 70px 50px 30px 0;
 }
 
 @media only screen and (min-width: 1000px) {
   .special-wrapper {
     display: flex;
   }
+
   .special-section1 {
     max-width: 750px;
     padding-right: 50px;
   }
+
+  .special-section1 h4 {
+    margin-top: 30px;
+  }
+
   .special-section2 {
     max-width: 350px;
-    padding-top: 70px;
+    margin-right: 80px 50px 0 0;
   }
 }
 
@@ -313,12 +324,14 @@ h4 {
   font-size: smaller;
 }
 
-.jobs-header {
-  padding-top: 20px;
+.jobs-company {
+  color: #5ec4c1;
+}
+
+.jobs-dates {
+  color: #fff;
   font-size: smaller;
-  color: white;
-  text-align: left;
-  margin-left: 50px;
+  font-style: italic;
 }
 
 .jobs-container {
@@ -329,10 +342,6 @@ h4 {
   padding-top: 30px;
   width: 100%;
   margin-left: 50px;
-}
-
-.jobs-company {
-  color: #5ec4c1;
 }
 
 @media only screen and (min-width: 1000px) {
