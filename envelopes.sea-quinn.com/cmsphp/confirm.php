@@ -10,7 +10,7 @@ if(!isset($_SESSION[Const_sLoginName]) || $_SESSION[Const_sLoginName] != "quinn"
 		if($_REQUEST["INPUT"] == "Wondermut")
 		{
 			$_SESSION[Const_sLoginName] = 'quinn';
-			header("Location: /Finances.shtml");
+			header("Location: /index.shtml");
 		}
 	}
 	else
