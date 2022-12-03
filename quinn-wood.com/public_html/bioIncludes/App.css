@@ -78,7 +78,7 @@ h4 {
 }
 
 .special-section1 {
-  margin-right: 20px;
+  margin-right: 50px;
 }
 
 .special-section1 h4 {
@@ -214,8 +214,7 @@ h4 {
   width: 50px;
   transform: translateY(-50%);
 }
-
-.arrow.left {
+w .arrow.left {
   left: 10%;
 }
 
