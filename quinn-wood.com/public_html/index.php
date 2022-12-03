@@ -230,36 +230,37 @@
 						</div>
 					</article>
 				</section>
+
+				<section class="projects-section">
+          <article class="project-box">
+						<?php AddSlideShow("Shop") ?>
+						<div class="project-box-inside">
+							<h4>My Shop</h4>
+						</div>
+					</article>
+				</section>
 			</div>
 		</div>
     
-		<div class="skills-title">My Shop</div>
-    <div class="blackBackground">
-			<?php AddSlideShow("Shop") ?>
-    </div>
+		<div class="footer-black-background" id="help">
+			<img alt="drew" src="./bioIncludes/pics/footer-background.jpg" class="responsive-img" />
 
+			<div class="footer-wrapper">
+				<div class="footer-text-seaquinn">Quinn Wood</div>
 
-
-
-			<div class="footer-black-background" id="help">
-				<img alt="drew" src="./bioIncludes/pics/footer-background.jpg" class="responsive-img" />
-
-				<div class="footer-wrapper">
-					<div class="footer-text-seaquinn">Quinn Wood</div>
-
-					<div id="contact" class="footer-text-contact">Get in touch</div>
-					<div class="footer-contact-types">
-						Drew Quinn<br/>
-						335 Pelissier Lake Road Marquette, MI 49855<br/>
-						906-235-6303<br/>
-						apquinn@gmail.com<br/>
-						sea-quinn.com
-					</div>
-					<div id="footer-contact-types-choice"></div>
+				<div id="contact" class="footer-text-contact">Get in touch</div>
+				<div class="footer-contact-types">
+					Drew Quinn<br/>
+					335 Pelissier Lake Road Marquette, MI 49855<br/>
+					906-235-6303<br/>
+					apquinn@gmail.com<br/>
+					sea-quinn.com
 				</div>
-				<br><br><br><br>
-				<br><br><br><br>
+				<div id="footer-contact-types-choice"></div>
 			</div>
+			<br><br><br><br>
+			<br><br><br><br>
+		</div>
 	</body>
 </html>
 

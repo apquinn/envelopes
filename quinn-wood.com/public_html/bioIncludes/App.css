@@ -53,6 +53,11 @@ body {
   font-family: Snell Roundhand, cursive;
 }
 
+@media only screen and (max-width: 450px) {
+  .header-text-wrapper h3 {
+    font-size: 12px;
+  }
+}
 /************** SPECIAL *************/
 .special-global-wrapper {
   max-width: 1200px;
@@ -78,7 +83,7 @@ h4 {
 }
 
 .special-section1 {
-  margin-right: 50px;
+  margin-right: 20px;
 }
 
 .special-section1 h4 {
