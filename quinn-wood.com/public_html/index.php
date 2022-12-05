@@ -87,8 +87,17 @@
       </div>
     </div>
 
-    <div class="blackBackground">
-      <div class="container">
+    <div class="blackBackground" id="projects">
+      <div class="special-global-wrapper">
+        <div class="projects-title">What people are saying</div>
+        <section class="projects-section">
+          <article class="project-box">
+						<?php AddSlideShow("What") ?>
+          </article>
+        </section>
+			</div>
+		</div>
+<!--		<div class="container">
         <div class="carousel">
           <div class="slider">
             <section>
@@ -96,42 +105,11 @@
                 <p>What people are saying</p>
               </span>
 
-              <span class="people-title"
-                >A word from my mentor</span
-              >
-
-              <span class="people-text">
-                <p>
-                  "Blah blah blah Blah blah blah Blah blah blah"
-                </p>
-              </span>
-
-              <span class="people-who">
-                <p>
-                  <strong>Armin Gallonnek</strong><br />
-                  Woodworker<br />
-                  <a href="https://www.thebluebook.com/iProView/1607831/northern-sun-woodworks/subcontractors/">Northern Sun Woodworking</a>
-                </p>
-              </span>
             </section>
 
             <section>
               <span class="people-header">
                 <p>What people are saying</p>
-              </span>
-              <span class="people-title"
-                >A word from a client</span
-              >
-              <span class="people-text">
-                <p>
-                  "WorBlah blah blah Blah blah blah Blah blah blah"
-                </p>
-              </span>
-              <span class="people-who">
-                <p>
-                  <strong>Eric Johnson</strong><br />
-                  Customer<br />
-                </p>
               </span>
             </section>
           </div>
@@ -150,6 +128,7 @@
         </div>
       </div>
     </div>
+-->
 
     <div class="blue" id="projects">
       <div class="special-global-wrapper">
@@ -269,25 +248,68 @@
 	function AddSlideShow($dir) {
 		echo '<div id="slideshow-container-'.$dir.'" class="slideshow-container hidden">';
 
-			$files = scandir(__DIR__."/bioIncludes/pics/Completed/".$dir);
-			foreach($files as $file){
-				if($file[0] != "."){
-					echo '<div class="mySlides-'.$dir.' mySlides fade"><img src="/bioIncludes/pics/Completed/'.$dir.'/'.$file.'"></div>';
+			if($dir != "What"){
+				$files = scandir(__DIR__."/bioIncludes/pics/Completed/".$dir);
+				foreach($files as $file){
+					if($file[0] != "."){
+						echo '<div class="mySlides-'.$dir.' mySlides fade"><img src="/bioIncludes/pics/Completed/'.$dir.'/'.$file.'"></div>';
+					}
 				}
+				echo '<a class="prev" onclick="plusSlides(-1, \''.$dir.'\')">❮</a>';
+				echo '<a class="next" onclick="plusSlides(1, \''.$dir.'\')">❯</a>';
 			}
-			echo '<a class="prev" onclick="plusSlides(-1, \''.$dir.'\')">❮</a>';
-			echo '<a class="next" onclick="plusSlides(1, \''.$dir.'\')">❯</a>';
+			else {
+				echo '<div class="mySlides-'.$dir.' mySlides fade">
+              <span class="people-title">A word from my mentor</span>
+
+              <span class="people-text">
+                <p>
+                  "Blah blah blah Blah blah blah Blah blah blah"
+                </p>
+              </span>
+
+              <span class="people-who">
+								<p>
+									Armin Gallonnek<br>
+									Woodworker<br>
+									<a href="https://www.thebluebook.com/iProView/1607831/northern-sun-woodworks/subcontractors/">Northern Sun Woodworking</a>
+								</p>
+							</span>
+					</div>';
+				echo '<div class="mySlides-'.$dir.' mySlides fade">
+						<span class="people-title">A word from a client</span>
+						<span class="people-text">
+							<p>
+								"WorBlah blah blah Blah blah blah Blah blah blah"
+							</p>
+						</span>
+						<span class="people-who">
+							<p>
+								Eric Johnson<br />
+								Customer<br />
+							</p>
+						</span>
+					</div>';
+				echo '<a class="prev" onclick="plusSlides(-1, \''.$dir.'\')">❮</a>';
+				echo '<a class="next" onclick="plusSlides(1, \''.$dir.'\')">❯</a>';
+			}
 		echo '</div><br/>';
 
 		echo '<div id="slideshow-dots-'.$dir.'" class="slideshow-dots hidden" style="text-align:center">';
-			$count = 1;
-			foreach($files as $file){
-				if($file[0] != "."){
-					echo '<span class="dot-'.$dir.' dot" onclick="currentSlide('.$count.', \''.$dir.'\')"></span>'; 
-					$count++;
+			if($dir != "What"){
+				$count = 1;
+				foreach($files as $file){
+					if($file[0] != "."){
+						echo '<span class="dot-'.$dir.' dot" onclick="currentSlide('.$count.', \''.$dir.'\')"></span>'; 
+						$count++;
+					}
 				}
 			}
-		echo '</div>';
+			else {
+				echo '<span class="dot-'.$dir.' dot" onclick="currentSlide(1, \''.$dir.'\')"></span>'; 
+				echo '<span class="dot-'.$dir.' dot" onclick="currentSlide(2, \''.$dir.'\')"></span>'; 
+			}
+				echo '</div>';
 	}
 ?>
 
@@ -304,5 +326,6 @@
 <script>InitiateSlideShow("Bench2")</script>
 <script>InitiateSlideShow("Kitchen")</script>
 <script>InitiateSlideShow("Shop")</script>
+<script>InitiateSlideShow("What")</script>
 
   

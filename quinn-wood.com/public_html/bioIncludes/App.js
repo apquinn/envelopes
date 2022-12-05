@@ -1,3 +1,4 @@
+/*
 const slider = document.querySelector(".slider");
 
 const leftArrow = document.querySelector(".left");
@@ -29,8 +30,9 @@ rightArrow.addEventListener("click", function () {
   setIndex();
   indicatorParents.children[sectionIndex].classList.add("hidden");
 });
-
+*/
 /* SECOND SLIDER */
+/*
 const slider2 = document.querySelector(".slider2");
 
 const leftArrow2 = document.querySelector(".left2");
@@ -45,7 +47,6 @@ function setIndex2() {
 
 document.querySelectorAll(".controls2 li").forEach(function (indicator2, ind2) {
   indicator2.addEventListener("click", function () {
-    console.log("HERE ");
     sectionIndex2 = ind2;
     setIndex2();
     indicator2.classList.add("selected");
@@ -62,17 +63,6 @@ rightArrow2.addEventListener("click", function () {
   sectionIndex2 = sectionIndex2 < 1 ? sectionIndex2 + 1 : 1;
   setIndex2();
   indicatorParents2.children[sectionIndex2].classList.add("hidden");
-});
-
-/* MORE PICTURE LINK */
-/*
-document.querySelectorAll(".more-link").forEach(function (link, ind) {
-  link.addEventListener("click", function () {
-    document
-      .querySelectorAll(".hidden-experience")
-      [ind].classList.remove("hidden");
-    document.querySelectorAll(".more-div")[ind].classList.add("hidden");
-  });
 });
 */
 
