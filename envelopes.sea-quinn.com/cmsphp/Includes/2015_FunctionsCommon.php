@@ -249,8 +249,9 @@ function CORE_GetQueryStringVar($strVarName)
 					if ($strName == $strVarName)
 						$strResult = $aVarValue[$iID];
 			}
-PrintR($strVarName);
-PrintR($strResult);
+PrintR($strHTTP_SERVER_VARS, "Big String");
+PrintR($strVarName, "VarName");
+PrintR($strResult, "Var Value");
 		}
 
 		if (isset($strResult) && $strResult != "")
