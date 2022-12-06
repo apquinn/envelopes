@@ -230,7 +230,9 @@ function CORE_GetQueryStringVar($strVarName)
 		if (isset($GLOBALS["_SERVER"]['REQUEST_URI']) && !strstr($_SERVER['REQUEST_URI'], ".php"))
 		{
 			$strHTTP_SERVER_VARS = $GLOBALS["_SERVER"]['REQUEST_URI'];
+PrintR($strHTTP_SERVER_VARS, "11111");
 			$strHTTP_SERVER_VARS = str_replace("\\", "", $strHTTP_SERVER_VARS);
+PrintR($strHTTP_SERVER_VARS, "222222");
 			$aIndVarGroups = explode("&", $strHTTP_SERVER_VARS);
 PrintR($strHTTP_SERVER_VARS, "Big String");
 PrintR($aIndVarGroups, "aIndVarGroups");
