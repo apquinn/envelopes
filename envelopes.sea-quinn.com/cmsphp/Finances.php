@@ -506,7 +506,6 @@ function ProcessAccount(&$aTransactions, $strName)
 		$fhTrans = fopen($_FILES[$strName]['name'], "r");
 PrintR($strName);
 PrintR($_FILES);
-PrintR($fhTrans);
 
 		if($strType == "Chase")
 			$aExpected = array("Transaction Date", "Post Date", "Description", "Category", "Type", "Amount", "Memo");
@@ -517,6 +516,7 @@ PrintR($fhTrans);
 		while (($aLineElements = fgetcsv($fhTrans, 4096, ",")) !== false)
 		{
 PrintR($aLineElements, "aLineElements");
+die;
 			$aTempArray = array();
 			if(count($aLineElements) > 1 && strlen($aLineElements[0]) > 0)
 			{
@@ -549,7 +549,6 @@ PrintR($aLineElements, "aLineElements");
 						}
 						else
 							throw new Exception("An unknown transaction type, '".$aLineElements[5]."' was discovered for ".$strName.".");
-die;
 					}
 					elseif($strType == "Chase")
 					{
@@ -588,6 +587,8 @@ die;
 				}
 			}
 		}
+PrintR("salfjksdfkjl");
+die;
 
 		if(isset($aTempDateLow))
 		{
