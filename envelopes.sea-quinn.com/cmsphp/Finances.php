@@ -31,7 +31,6 @@ function Finances_Main()
 							return "Transactions";
 						}
 					</script>';
-PrintR($strAction);
 				$strAction = CORE_GetQueryStringVar(Const_Action);
 				if($strAction == "")
 					$strAction = "Budget";

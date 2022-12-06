@@ -229,6 +229,8 @@ function CORE_GetQueryStringVar($strVarName)
 
 		if (isset($GLOBALS["_SERVER"]['REDIRECT_QUERY_STRING_UNESCAPED']) && !strstr($_SERVER['REQUEST_URI'], ".php"))
 		{
+PrintR($GLOBALS["_SERVER"]);
+
 			$strHTTP_SERVER_VARS = $GLOBALS["_SERVER"]['REDIRECT_QUERY_STRING_UNESCAPED'];
 			$strHTTP_SERVER_VARS = str_replace("\\", "", $strHTTP_SERVER_VARS);
 			$aIndVarGroups = explode("&", $strHTTP_SERVER_VARS);
