@@ -177,6 +177,9 @@ function Finances_AddHeader($strTitle, $strJsToCall)
 
 		$strQuery = "SELECT MIN(TransDate) FROM www_budget.Transactions WHERE IgnoreTrans=0";
 		$aResults = $classSqlQuery->MySQL_Queries($strQuery);
+		if(count($aResults) == 0){
+			$aResults[0]['MIN(TransDate)'] = time();
+		}
 
 		$strMonth = date("n-Y", time());
 		$aMonth = [];
