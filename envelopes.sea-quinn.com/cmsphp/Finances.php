@@ -504,6 +504,8 @@ function ProcessAccount(&$aTransactions, $strName)
 
 		######
 		$fhTrans = fopen($_FILES[$strName]['tmp_name'], "r");
+PrintR($strName);
+PrintR($_FILES);
 
 		if($strType == "Chase")
 			$aExpected = array("Transaction Date", "Post Date", "Description", "Category", "Type", "Amount", "Memo");
