@@ -473,8 +473,6 @@ function ProcessImportPhase1()
 			$_SESSION['cmsAdmin_ErrMsgArray'] = $aIssues;
 			throw new Exception(Const_emCorrectItems);
 		}
-PrintR("kasjlfk");
-die;
 		$aTransactions = array();
 		foreach($_FILES as $strName=>$aFile)
 			if($aFile["name"] != "")
@@ -503,6 +501,7 @@ function ProcessAccount(&$aTransactions, $strName)
 		else
 			throw new Exception("Could not determine format of ".$strName." file.");
 
+PrintR("kasjlfk");
 
 		######
 		$fhTrans = fopen($_FILES[$strName]['tmp_name'], "r");
@@ -512,9 +511,11 @@ function ProcessAccount(&$aTransactions, $strName)
 		elseif($strType == "Incredible")
 			$aExpected = array("Account Designator", "Posted Date", "Serial Number", "Description", "Amount", "CR/DR");
 
+PrintR("kasjlfk");
 		$iIsFirst = true;
 		while (($aLineElements = fgetcsv($fhTrans, 4096, ",")) !== false)
 		{
+PrintR($aLineElements);
 			$aTempArray = array();
 			if(count($aLineElements) > 1 && strlen($aLineElements[0]) > 0)
 			{
