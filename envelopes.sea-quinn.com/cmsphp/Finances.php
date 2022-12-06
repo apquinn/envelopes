@@ -516,8 +516,7 @@ PrintR($fhTrans);
 		$iIsFirst = true;
 		while (($aLineElements = fgetcsv($fhTrans, 4096, ",")) !== false)
 		{
-PrintR($aLineElements);
-die;
+PrintR($aLineElements, "aLineElements");
 			$aTempArray = array();
 			if(count($aLineElements) > 1 && strlen($aLineElements[0]) > 0)
 			{
@@ -550,6 +549,7 @@ die;
 						}
 						else
 							throw new Exception("An unknown transaction type, '".$aLineElements[5]."' was discovered for ".$strName.".");
+die;
 					}
 					elseif($strType == "Chase")
 					{
