@@ -177,8 +177,7 @@ function Finances_AddHeader($strTitle, $strJsToCall)
 
 		$strQuery = "SELECT MIN(TransDate) FROM www_budget.Transactions WHERE IgnoreTrans=0";
 		$aResults = $classSqlQuery->MySQL_Queries($strQuery);
-PrintR($aResults);
-		if(count($aResults) == 0){
+		if(count($aResults["MIN(TransDate)"]) == ""){
 			$aResults[0]['MIN(TransDate)'] = time();
 		}
 
