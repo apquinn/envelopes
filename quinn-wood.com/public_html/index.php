@@ -9,9 +9,8 @@
 	</head>
   <body>
     <div class="header-black-background">
-      <img alt="sea quinn" src=./bioIncludes/pics/header-background.jpg class="responsive-img seaquinn"/>
       <div class="header-text-wrapper">
-        <div class="header-text1">Quinn Wood</div>
+        <div class="header-text1">QW</div>
         <h3>Woodworker. Furniture Designer. Groovy Individual.</h3>
       </div>
     </div>
