@@ -231,16 +231,12 @@ function CORE_GetQueryStringVar($strVarName)
 		{
 			$strHTTP_SERVER_VARS = $GLOBALS["_SERVER"]['REQUEST_URI'];
 			$aIndVarGroups = explode("&", explode("?", $strHTTP_SERVER_VARS)[1]);
-PrintR($strHTTP_SERVER_VARS, "Big String");
-PrintR($aIndVarGroups, "aIndVarGroups");
 
 			if (is_array($aIndVarGroups))
 			{
 				foreach ($aIndVarGroups as $strGroup)
 				{
-PrintR($strGroup, "strGroup");
 					$aIndVarGroups = explode("=", $strGroup);
-PrintR($aIndVarGroups, "Inside");
 					if (isset($aIndVarGroups[0]))
 						$aVarName[] = $aIndVarGroups[0];
 					if (isset($aIndVarGroups[1]))
@@ -252,8 +248,6 @@ PrintR($aIndVarGroups, "Inside");
 					if ($strName == $strVarName)
 						$strResult = $aVarValue[$iID];
 			}
-PrintR($strVarName, "VarName");
-PrintR($strResult, "Var Value");
 		}
 
 		if (isset($strResult) && $strResult != "")
