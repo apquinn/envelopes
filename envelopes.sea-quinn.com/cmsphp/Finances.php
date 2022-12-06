@@ -478,9 +478,10 @@ function ProcessImportPhase1()
 		foreach($_FILES as $strName=>$aFile)
 			if($aFile["name"] != "")
 				ProcessAccount($aTransactions, $strName);
-		ProcessLoad($aTransactions);
+PrintR($aTransactions);
+				#		ProcessLoad($aTransactions);
 
-		header("Location: ".CORE_GetURL(Const_ParentURL, $_REQUEST[Const_Action], Const_Phase1, '', "", ""));
+#		header("Location: ".CORE_GetURL(Const_ParentURL, $_REQUEST[Const_Action], Const_Phase1, '', "", ""));
 	}
 	catch (Exception $EX)
 	{
