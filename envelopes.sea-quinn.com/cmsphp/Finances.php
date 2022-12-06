@@ -473,7 +473,8 @@ function ProcessImportPhase1()
 			$_SESSION['cmsAdmin_ErrMsgArray'] = $aIssues;
 			throw new Exception(Const_emCorrectItems);
 		}
-
+PrintR("kasjlfk");
+die;
 		$aTransactions = array();
 		foreach($_FILES as $strName=>$aFile)
 			if($aFile["name"] != "")
