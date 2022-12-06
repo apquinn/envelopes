@@ -501,7 +501,6 @@ function ProcessAccount(&$aTransactions, $strName)
 		else
 			throw new Exception("Could not determine format of ".$strName." file.");
 
-PrintR("11111");
 
 		######
 		$fhTrans = fopen($_FILES[$strName]['tmp_name'], "r");
@@ -511,11 +510,11 @@ PrintR("11111");
 		elseif($strType == "Incredible")
 			$aExpected = array("Account Designator", "Posted Date", "Serial Number", "Description", "Amount", "CR/DR");
 
-PrintR("22222");
 		$iIsFirst = true;
 		while (($aLineElements = fgetcsv($fhTrans, 4096, ",")) !== false)
 		{
 PrintR($aLineElements);
+die;
 			$aTempArray = array();
 			if(count($aLineElements) > 1 && strlen($aLineElements[0]) > 0)
 			{
