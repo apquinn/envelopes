@@ -503,7 +503,7 @@ function ProcessAccount(&$aTransactions, $strName)
 
 
 		######
-		$fhTrans = fopen($_FILES[$strName]['tmp_name'], "r");
+		$fhTrans = fopen($_FILES[$strName]['name'], "r");
 PrintR($strName);
 PrintR($_FILES);
 
