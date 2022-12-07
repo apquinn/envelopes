@@ -477,10 +477,9 @@ function ProcessImportPhase1()
 		foreach($_FILES as $strName=>$aFile)
 			if($aFile["name"] != "")
 				ProcessAccount($aTransactions, $strName);
-PrintR($aTransactions);
-				#		ProcessLoad($aTransactions);
+		ProcessLoad($aTransactions);
 
-#		header("Location: ".CORE_GetURL(Const_ParentURL, $_REQUEST[Const_Action], Const_Phase1, '', "", ""));
+		header("Location: ".CORE_GetURL(Const_ParentURL, $_REQUEST[Const_Action], Const_Phase1, '', "", ""));
 	}
 	catch (Exception $EX)
 	{
@@ -501,22 +500,19 @@ function ProcessAccount(&$aTransactions, $strName)
 		else
 			throw new Exception("Could not determine format of ".$strName." file.");
 
-
-		######
-		$fhTrans = fopen($_FILES[$strName]['name'], "r");
-PrintR($strName);
 PrintR($_FILES);
+die;
+		######
+		$fhTrans = fopen($_FILES[$strName]['tmp_name'], "r");
 
 		if($strType == "Chase")
 			$aExpected = array("Transaction Date", "Post Date", "Description", "Category", "Type", "Amount", "Memo");
 		elseif($strType == "Incredible")
-			$aExpected = array("Account Designator", "Posted Date", "Serial Number", "Description", "Amount", "CR/DR");
+			$aExpected = array("Account Name", "Processed Date", "Description", "Check Number", "Credit or Debit", "Amount");
 
 		$iIsFirst = true;
 		while (($aLineElements = fgetcsv($fhTrans, 4096, ",")) !== false)
 		{
-PrintR($aLineElements, "aLineElements");
-die;
 			$aTempArray = array();
 			if(count($aLineElements) > 1 && strlen($aLineElements[0]) > 0)
 			{
@@ -535,20 +531,20 @@ die;
 						$aDateParts = explode("/", $aLineElements[1]);
 
 						$aTempArray['ReadableDate'] = $aLineElements[1];
-						$aTempArray['Description'] = $aLineElements[3];
+						$aTempArray['Description'] = $aLineElements[2];
 
-						if($aLineElements[5] == "CR")
+						if($aLineElements[4] == "Credit")
 						{
 							$aTempArray['TransactionType'] = 'credit';
-							$aTempArray['Amount'] = $aLineElements[4];
+							$aTempArray['Amount'] = $aLineElements[5];
 						}
-						elseif($aLineElements[5] == "DR")
+						elseif($aLineElements[4] == "Debit")
 						{
 							$aTempArray['TransactionType'] = 'debit';
-							$aTempArray['Amount'] = -$aLineElements[4];
+							$aTempArray['Amount'] = -$aLineElements[5];
 						}
 						else
-							throw new Exception("An unknown transaction type, '".$aLineElements[5]."' was discovered for ".$strName.".");
+							throw new Exception("An unknown transaction type, '".$aLineElements[4]."' was discovered for ".$strName.".");
 					}
 					elseif($strType == "Chase")
 					{
@@ -587,8 +583,6 @@ die;
 				}
 			}
 		}
-PrintR("salfjksdfkjl");
-die;
 
 		if(isset($aTempDateLow))
 		{
