@@ -501,6 +501,7 @@ function ProcessAccount(&$aTransactions, $strName)
 			throw new Exception("Could not determine format of ".$strName." file.");
 
 PrintR($_FILES);
+phpinfo();
 die;
 		######
 		$fhTrans = fopen($_FILES[$strName]['tmp_name'], "r");
