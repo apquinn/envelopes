@@ -477,7 +477,6 @@ function ProcessImportPhase1()
 		foreach($_FILES as $strName=>$aFile)
 			if($aFile["name"] != "")
 				ProcessAccount($aTransactions, $strName);
-PrintR($aTransactions);
 		ProcessLoad($aTransactions);
 die;
 
@@ -545,6 +544,7 @@ function ProcessAccount(&$aTransactions, $strName)
 						}
 						else
 							throw new Exception("An unknown transaction type, '".$aLineElements[4]."' was discovered for ".$strName.".");
+PrintR($aTempArray);
 					}
 					elseif($strType == "Chase")
 					{
