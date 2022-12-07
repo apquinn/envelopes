@@ -477,7 +477,9 @@ function ProcessImportPhase1()
 		foreach($_FILES as $strName=>$aFile)
 			if($aFile["name"] != "")
 				ProcessAccount($aTransactions, $strName);
+PrintR($aTransactions);
 		ProcessLoad($aTransactions);
+die;
 
 		header("Location: ".CORE_GetURL(Const_ParentURL, $_REQUEST[Const_Action], Const_Phase1, '', "", ""));
 	}
@@ -625,7 +627,7 @@ function ProcessLoad($aTransactions)
 				$classSqlQuery->MySQL_Queries($strQuery);
 			}
 		}
-
+die;
 
 		$strQuery = "SELECT * FROM www_budget.TransactionsTemp";
 		$aResults = $classSqlQuery->MySQL_Queries($strQuery);
