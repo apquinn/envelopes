@@ -835,22 +835,27 @@ function OpenTransfer($iID)
 			$strQuery = "SELECT * FROM Transactions WHERE ID=".$iID;
 			$aResults = $classSqlQuery->MySQL_Queries($strQuery);
 
-			print'TransDate='.date("n/j/Y", $aResults[0]['TransDate']).';';
-			print'Amount='.$aResults[0]['Amount'].';';
-			print'Description='.$aResults[0]['Description'].';';
+			print date("n/j/Y", $aResults[0]['TransDate']).';';
 
 			$strQuery = "SELECT * FROM Transactions WHERE ID=".$aResults[0]['TransferPartnerID'];
 			$aSecondResults = $classSqlQuery->MySQL_Queries($strQuery);
 
+			if($aResults[0]['Amount'] > 0)
+				print str_replace(".00", "", $aResults[0]['Amount']).';';
+			else
+				print str_replace(".00", "", $aSecondResults[0]['Amount']).';';
+			print $aResults[0]['Description'].';';
+
+
 			if($aResults[0]['TransferType'] == "To")
 			{
-				print'FromEnvelopeID='.$aSecondResults[0]['EnvelopeID'].';';
-				print'ToEnvelopeID='.$aResults[0]['EnvelopeID'].';';
+				print $aSecondResults[0]['EnvelopeID'].';';
+				print $aResults[0]['EnvelopeID'].';';
 			}
 			else
 			{
-				print'FromEnvelopeID='.$aResults[0]['EnvelopeID'].';';
-				print'ToEnvelopeID='.$aSecondResults[0]['EnvelopeID'].';';
+				print $aResults[0]['EnvelopeID'].';';
+				print $aSecondResults[0]['EnvelopeID'].';';
 			}
 		}
 		else
@@ -953,19 +958,8 @@ function SaveTransCat($iID, $iCat, $strCaller)
 		$classSqlQuery = new SqlDataQueries();
 		$classSqlQuery->SpecifyDB("", "www_budget", "", "");
 
-		if($strCaller == "Compare")
-		{
-			$strQuery = "UPDATE Transactions SET EnvelopeID=".$iCat." WHERE ID=".$iID;
-			$classSqlQuery->MySQL_Queries($strQuery);
-
-			$classSqlQuery->MySQL_Queries(str_replace("Transactions", "Transactions_Proposed_Amy",  $strQuery));
-			$classSqlQuery->MySQL_Queries(str_replace("Transactions", "Transactions_Proposed_Drew",  $strQuery));
-		}
-		else
-		{
-			$strQuery = "UPDATE Transactions SET EnvelopeID=".$iCat." WHERE ID=".$iID;
-			$classSqlQuery->MySQL_Queries($strQuery);
-		}
+		$strQuery = "UPDATE Transactions SET EnvelopeID=".$iCat." WHERE ID=".$iID;
+		$classSqlQuery->MySQL_Queries($strQuery);
 	}
 	catch (Exception $EX)
 	{
@@ -983,9 +977,6 @@ function SetTransCat($iTransID, $iEnvID)
 
 		$strQuery = "UPDATE Transactions SET EnvelopeID=".$iEnvID." WHERE ID=".$iTransID;
 		$classSqlQuery->MySQL_Queries($strQuery);
-
-		$classSqlQuery->MySQL_Queries(str_replace("Transactions", "Transactions_Proposed_Amy",  $strQuery));
-		$classSqlQuery->MySQL_Queries(str_replace("Transactions", "Transactions_Proposed_Drew",  $strQuery));
 	}
 	catch (Exception $EX)
 	{
@@ -1023,6 +1014,9 @@ function SaveTransfer($iID, $strTransDate, $iAmount, $strDesc, $iFromEnvID, $iTo
 		$iAmount = str_replace("$", "", str_replace(",", "", $iAmount));
 		if($iAmount == "")
 			$aIssues[] = "Amount is required.";
+
+		if($iAmount == 0)
+			$aIssues[] = "Amount cannot be zero.";
 
 		if($strDesc == "")
 			$aIssues[] = "Description is required.";
@@ -1093,8 +1087,8 @@ function SaveTransfer($iID, $strTransDate, $iAmount, $strDesc, $iFromEnvID, $iTo
 						  Description='".addslashes($strDesc)."',
 						  OriginalDescription='".addslashes($strDesc)."',
 						  DescriptionGroup='',
-						  Amount=".str_replace("$", "", str_replace(",", "", $iAmount)).",
-						  AmountNumber=".str_replace("$", "", str_replace(",", "", $iAmount)).",
+						  Amount=-".str_replace("$", "", str_replace(",", "", $iAmount)).",
+						  AmountNumber=-".str_replace("$", "", str_replace(",", "", $iAmount)).",
 						  TransactionType='debit',
 						  TransDateReadable='".addslashes($strTransDate)."',
 						  Notes='',
@@ -1108,8 +1102,6 @@ function SaveTransfer($iID, $strTransDate, $iAmount, $strDesc, $iFromEnvID, $iTo
 						  ParentID=0,
 						  IsTransfer=1,
 						  TransferType='From'";
-
-
 
 			if(isset($iID) && $iID != "" && $iID != 0)
 				$strQuery .= " WHERE ID=".$iFromTransID;

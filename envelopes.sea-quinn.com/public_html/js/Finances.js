@@ -278,18 +278,33 @@ function OpenTransfer($iID) {
 
   if (jQuery("#DIV_Transfer").is(":visible")) CloseTransfer();
   else {
-    document.getElementById("TransDate").value = "";
-    document.getElementById("Amount").value = "";
-    document.getElementById("Description").value = "";
-    document.getElementById("ToEnvelopeID").selectedIndex = 0;
-    document.getElementById("FromEnvelopeID").selectedIndex = 0;
-
     if ($iID == "") {
-      jQuery("#DIV_TransferButtonSave").show();
-      jQuery("#DIV_TransferButtonEdit").hide();
+      document.getElementById("TransDate").value = "";
+      document.getElementById("Amount").value = "";
+      document.getElementById("Description").value = "";
+      document.getElementById("ToEnvelopeID").selectedIndex = 0;
+      document.getElementById("FromEnvelopeID").selectedIndex = 0;
+      document.getElementById("HIDDEN_ID").value = "";
+      jQuery("#delete").hide();
     } else {
-      jQuery("#DIV_TransferButtonSave").hide();
-      jQuery("#DIV_TransferButtonEdit").show();
+      jQuery("#delete").show();
+      UserWait(true);
+
+      $.post(
+        "/cgi-bin/FinancesFunctions.php",
+        { action: "OpenTransfer", ID: $iID },
+        function ($strData) {
+          $aValues = $strData.split(";");
+          document.getElementById("TransDate").value = $aValues[0];
+          document.getElementById("Amount").value = $aValues[1];
+          document.getElementById("Description").value = $aValues[2];
+          document.getElementById("FromEnvelopeID").value = $aValues[3];
+          document.getElementById("ToEnvelopeID").value = $aValues[4];
+          document.getElementById("HIDDEN_ID").value = $iID;
+
+          UserWait(false);
+        }
+      );
     }
 
     jQuery("#DIV_Transfer").show();
@@ -792,8 +807,7 @@ function ShowTransDetails($iID, $bIsTransfer, $strView) {
         }
       );
     } else {
-      jQuery("#TR_" + $iID).show();
-      alert("not working yet");
+      //jQuery("#TR_" + $iID).show();
       OpenTransfer($iID);
     }
   } else jQuery("#TR_" + $iID).hide();
@@ -895,7 +909,6 @@ function SaveTransfer() {
   $strTransTableToUse = GetCurrentTransTable();
 
   $iID = document.getElementById("HIDDEN_ID").value;
-
   $strTransDate = document.getElementById("TransDate").value;
   $iAmount = document.getElementById("Amount").value;
   $strDescription = document.getElementById("Description").value;
@@ -921,7 +934,6 @@ function SaveTransfer() {
     function ($strData) {
       if ($strData == "") {
         CloseTransfer();
-
         ListTransactions("", "");
       } else
         document.getElementById("DIV_TransferMessage").innerHTML = $strData;

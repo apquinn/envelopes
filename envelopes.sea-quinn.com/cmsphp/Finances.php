@@ -296,15 +296,23 @@ function Finances_AddDiv($strID, $bIsWell = true)
 					print $classScreen->ScreenElements_AddInputFieldDate("TransDate", "Date", "col-md-3", false, "");
 					print $classScreen->ScreenElements_AddInputFieldDollar("Amount", "Amount", "col-md-2", false, "", "");
 
-					print $classScreen->ScreenElements_AddSelect("FromEnvelopeID", "From", $aEnvs, "col-md-3", false, 'onchange="LoadBudget()"', "");
-					print $classScreen->ScreenElements_AddSelect("ToEnvelopeID", "To", $aEnvs, "col-md-3", false, 'onchange="LoadBudget()"', "");
+					//print $classScreen->ScreenElements_AddSelect("FromEnvelopeID", "From", $aEnvs, "col-md-3", false, 'onchange="LoadBudget()"', "");
+					//print $classScreen->ScreenElements_AddSelect("ToEnvelopeID", "To", $aEnvs, "col-md-3", false, 'onchange="LoadBudget()"', "");
+					print $classScreen->ScreenElements_AddSelect("FromEnvelopeID", "From", $aEnvs, "col-md-3", false, '', "");
+					print $classScreen->ScreenElements_AddSelect("ToEnvelopeID", "To", $aEnvs, "col-md-3", false, '', "");
 				print'</div>';
 
 				print'<div class="row">'.$classScreen->ScreenElements_AddTextArea("Description", "Description", 3, "col-md-11", false, "", "").'</div>';
 
 				print'<div class="row"><div class="col-md-4 bottom-pad">';
-					$classScreen->ScreenElements_AddButton("transfer", "save", "save", "", false, 'SaveTransfer()', "onclick");
+					if(CORE_GetQueryStringVar(Const_Action) == "Budget"){
+						$classScreen->ScreenElements_AddButton("transfer", "save", "save", "", false, 'SaveTransferFromBudget()', "onclick");
+					}
+					else {
+						$classScreen->ScreenElements_AddButton("transfer", "save", "save", "", false, 'SaveTransfer()', "onclick");
+					}
 					$classScreen->ScreenElements_AddButton("transfer", "cancel", "cancel", "", false, 'CloseTransfer()', "onclick");
+					$classScreen->ScreenElements_AddButton("transfer", "delete", "delete", "", false, 'DeleteTransfer()', "onclick");
 					print $classScreen->ScreenElements_AddButtonGroup("transfer", 0);
 				print'</div></div>';
 			print'</div>';
@@ -478,7 +486,6 @@ function ProcessImportPhase1()
 			if($aFile["name"] != "")
 				ProcessAccount($aTransactions, $strName);
 		ProcessLoad($aTransactions);
-die;
 
 		header("Location: ".CORE_GetURL(Const_ParentURL, $_REQUEST[Const_Action], Const_Phase1, '', "", ""));
 	}
@@ -527,7 +534,7 @@ function ProcessAccount(&$aTransactions, $strName)
 
 					if($strType == "Incredible")
 					{
-						$aDateParts = explode("/", $aLineElements[1]);
+						$aDateParts = explode("-", $aLineElements[1]);
 
 						$aTempArray['ReadableDate'] = $aLineElements[1];
 						$aTempArray['Description'] = $aLineElements[2];
@@ -544,7 +551,6 @@ function ProcessAccount(&$aTransactions, $strName)
 						}
 						else
 							throw new Exception("An unknown transaction type, '".$aLineElements[4]."' was discovered for ".$strName.".");
-PrintR($aTempArray);
 					}
 					elseif($strType == "Chase")
 					{
@@ -627,7 +633,6 @@ function ProcessLoad($aTransactions)
 				$classSqlQuery->MySQL_Queries($strQuery);
 			}
 		}
-die;
 
 		$strQuery = "SELECT * FROM www_budget.TransactionsTemp";
 		$aResults = $classSqlQuery->MySQL_Queries($strQuery);
