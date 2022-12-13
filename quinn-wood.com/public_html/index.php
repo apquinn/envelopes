@@ -21,8 +21,7 @@
       <div class="special-wrapper">
         <div class="special-section1">
           <p>
-						I'm a graduate of Michigan State University with simultaneous degrees in computer science, 
-						industrial psychology and minor in art history. Quinnwood is a custom furniture building business tucked away in
+						Quinnwood is a custom furniture building business tucked away in
 						Michigan's upper peninsula since 2008. After living the fast-paced life of a consultant and software
 						architect through the booming of the Internet, I now live a quieter life building 
 						furniture for discerning customers from a shop on 80 acres of forest. Life on the shores of Lake Superior 
@@ -71,7 +70,7 @@
             <p>
               My Shop is a 900 sqr ft building deep in the woods of our 80 acres.
             </p>
-            <p><a href="#skills">Check out my shop</a></p>
+            <p><a href="#shop">Check out my shop</a></p>
           </div>
           <div class="blue-wrapper">
             <div>
@@ -97,38 +96,7 @@
         </section>
 			</div>
 		</div>
-<!--		<div class="container">
-        <div class="carousel">
-          <div class="slider">
-            <section>
-              <span class="people-header">
-                <p>What people are saying</p>
-              </span>
 
-            </section>
-
-            <section>
-              <span class="people-header">
-                <p>What people are saying</p>
-              </span>
-            </section>
-          </div>
-          <div class="controls">
-            <span class="arrow left"
-              ><img src="bioIncludes/pics/chevron-left.png"
-            /></span>
-            <span class="arrow right"
-              ><img src="bioIncludes/pics/chevron-right.png"
-            /></span>
-            <ul>
-              <li class="selected"></li>
-              <li></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
--->
 
     <div class="blue" id="projects">
       <div class="special-global-wrapper">
@@ -210,7 +178,7 @@
 					</article>
 				</section>
 
-				<section class="projects-section">
+				<section class="projects-section" id="shop">
           <article class="project-box">
 						<?php AddSlideShow("Shop") ?>
 						<div class="project-box-inside">
