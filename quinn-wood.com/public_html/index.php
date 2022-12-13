@@ -86,7 +86,7 @@
       </div>
     </div>
 
-    <div class="blackBackground" id="projects">
+    <div class="blackBackground">
       <div class="special-global-wrapper">
         <div class="projects-title">What people are saying</div>
         <section class="projects-section">
