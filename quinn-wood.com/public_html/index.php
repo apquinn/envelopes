@@ -198,10 +198,9 @@
 				<div id="contact" class="footer-text-contact">Get in touch</div>
 				<div class="footer-contact-types">
 					Drew Quinn<br/>
-					335 Pelissier Lake Road Marquette, MI 49855<br/>
 					906-235-6303<br/>
 					apquinn@gmail.com<br/>
-					sea-quinn.com
+					quinn-wood.com
 				</div>
 				<div id="footer-contact-types-choice"></div>
 			</div>
