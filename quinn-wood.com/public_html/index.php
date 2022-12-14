@@ -58,7 +58,7 @@
             </div>
             <h4>What do I do?</h4>
             <p>
-              I design and build custom furniture for clients all over the country..
+              I design and build custom furniture for clients all over the country.
             </p>
             <p><a href="#projects">See my projects</a></p>
           </div>
